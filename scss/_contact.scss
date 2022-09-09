@@ -1,0 +1,5 @@
+@use "config" as conf;
+
+.contact{
+    background-color: conf.$secundary-color;
+}

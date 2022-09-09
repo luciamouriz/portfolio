@@ -1,0 +1,12 @@
+@use "config" as conf;
+
+.about {
+
+    p{
+        width: 40%;
+        font-size: 1.3vw;
+        margin-left: 10rem;
+    }
+
+    background-color: conf.$terciary-color;
+}

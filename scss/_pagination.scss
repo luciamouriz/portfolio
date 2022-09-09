@@ -1,0 +1,24 @@
+@use "config" as conf;
+
+.swiper-pagination{
+    
+    left: 1%; //media queries
+    margin-top: calc(8em + 10vw); 
+
+    .swiper-pagination-bullet {
+        
+        width: calc(0.8em + 0.6vw);
+        height: 3vh;
+        border-radius: 100%;
+        text-align: center;
+        line-height: 30px;
+        opacity: 1;
+        background: rgba(255, 255, 255, 0.2);
+    }
+    
+    
+    .swiper-pagination-bullet-active {
+        background: conf.$primary-color;
+    }
+
+}

@@ -1,0 +1,5 @@
+@use "config" as conf;
+
+.projects {
+    background-color: conf.$terciary-color;
+}
