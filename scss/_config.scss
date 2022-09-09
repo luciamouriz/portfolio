@@ -1,0 +1,36 @@
+$primary-color: #FF2AC3;
+$secundary-color:#454545;
+$terciary-color: #4D4D4D;
+
+$font-family:(
+    colombo: "Post No Bills Colombo",
+    colombo-light: "Post No Bills Colombo Light",
+    colombo-bold: "Post No Bills Colombo Bold",
+    khmer: "Khmer",
+    khmer-light: "Khmer Light",
+);
+
+//Añadimos el mapa de fuentes
+@function fontFamily($family-value){
+    @return map-get($font-family, $family-value );
+}
+
+@mixin flexbox-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexbox-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin mobile{
+    @media(max-width: 767px){
+        @content;
+    }
+}
