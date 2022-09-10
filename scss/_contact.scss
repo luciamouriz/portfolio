@@ -1,5 +1,102 @@
 @use "config" as conf;
 
 .contact{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     background-color: conf.$secundary-color;
+
+    .p-contact{
+        grid-column: 1 / 2;
+        grid-row: 1;
+        width: 60%;
+        font-size: calc(0.6em + 0.6vw);
+        margin-top: 40%;
+        margin-left: 20%;
+    }
+
+    .b-contact {
+        grid-column: 2 / 3;
+        position: absolute;
+        width: calc(20em + 70vw);
+        height: 100vh;
+        background-image: url(../img/b-form.png);
+        background-repeat: no-repeat;
+        background-size: 48%;
+        background-position: right;
+      }
+
+      form{
+        width: 60%;
+        grid-column: 2 / 3;
+        display: flex;
+        flex-direction: column;
+        gap: 0.7em;
+        margin-top: 33%;
+        margin-left: 10%;
+        z-index: 4;
+        
+
+        label{
+            display: flex;
+            flex-direction: row;
+            gap: 0.7em;
+        }
+        
+        input::placeholder , textarea::placeholder{
+            font-size: 1em;
+            font-family: conf.fontFamily(khmer);
+        }
+
+        input.name{
+            width: 100%;
+            height: 6vh;
+            
+        }
+
+        input.email{
+            width: 100%;
+            height: 6vh;
+        }
+
+        input.subject{
+            width: 100%;
+            height: 6vh;
+        }
+
+        input, textarea{
+            font-size: 1em;
+            font-family: conf.fontFamily(khmer);
+            padding: 1em 1em 1em 1em;
+            border-radius: 0.4em;
+            border: 1.5px solid conf.$acento-color;
+        }
+    
+        button{
+            border: 0;
+            font-size: 1em;
+            color: white;
+            font-family: conf.fontFamily(khmer);
+            background-color: conf.$acento-color;
+            border-radius: 0.4em;
+            width: 25%;
+            height: 8%;
+        }
+      }
+
+
+      .credits{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        font-size: 0.8em;
+        margin-left: 20%;
+        margin-top: 7%;
+        span{
+            
+            border-radius: 0.5em;
+            width: 23vw;
+            height: 0.5vh;
+            background-color: conf.$acento-color;
+        }
+      }
 }
