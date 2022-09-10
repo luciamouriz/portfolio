@@ -1,5 +1,74 @@
 @use "config" as conf;
 
 .projects {
-    background-color: conf.$terciary-color;
+    background-color: conf.$secundary-light-color;
+
+   
+    .swiper-projects {
+
+        margin: 0 auto;
+        max-width: 300px;
+        margin-top: 7%;
+        overflow: visible;
+
+        .swiper-slide {
+            min-height: 180px;
+            text-align: center;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: white;
+            transition: all .3s ease;
+            
+            &.swiper-slide-active {
+              color:#fff;
+              background-color: conf.$primary-color;
+              transform: scale(1.4);
+              z-index: 2
+            }
+          }
+         
+        /* ARROWS */
+        .swiper-button-next, 
+        .swiper-button-prev{
+            margin-top: 17%;
+            margin-left: 38%;
+            padding: 2em;
+            border-radius: 0.5em;
+            background-color: conf.$acento-color;
+        }
+        
+        .swiper-button-prev{
+            left: 6%;
+            color: rgb(255, 255, 255);
+        }
+        .swiper-button-next {
+            
+            left: 14%;
+            color: rgb(255, 255, 255);
+        }
+        
+          
+      }
+    
+    .swiper-pagination-projects{
+
+        .swiper-pagination-bullet-projects {
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            line-height: 20px;
+            font-size: 12px;
+            color:#000;
+            opacity: 1;
+            background: rgba(0,0,0,0.2);
+            
+            &.swiper-pagination-bullet-projects-active {
+                color:#fff;
+                background: linear-gradient(45deg, rgb(246, 146, 89), rgb(241, 105, 117));
+            }
+        }
+    }
+    
 }

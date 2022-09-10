@@ -1,4 +1,5 @@
 .swiper-pagination {
+  width: 3%;
   left: 1%;
   margin-top: calc(9em + 9vw);
 }
@@ -158,6 +159,59 @@
 .projects {
   background-color: #4D4D4D;
 }
+.projects .swiper-projects {
+  margin: 0 auto;
+  max-width: 300px;
+  margin-top: 7%;
+  overflow: visible;
+  /* ARROWS */
+}
+.projects .swiper-projects .swiper-slide {
+  min-height: 180px;
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  transition: all 0.3s ease;
+}
+.projects .swiper-projects .swiper-slide.swiper-slide-active {
+  color: #fff;
+  background-color: #FF2AC3;
+  transform: scale(1.4);
+  z-index: 2;
+}
+.projects .swiper-projects .swiper-button-next,
+.projects .swiper-projects .swiper-button-prev {
+  margin-top: 17%;
+  margin-left: 38%;
+  padding: 2em;
+  border-radius: 0.5em;
+  background-color: #29D7CC;
+}
+.projects .swiper-projects .swiper-button-prev {
+  left: 6%;
+  color: rgb(255, 255, 255);
+}
+.projects .swiper-projects .swiper-button-next {
+  left: 14%;
+  color: rgb(255, 255, 255);
+}
+.projects .swiper-pagination-projects .swiper-pagination-bullet-projects {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+.projects .swiper-pagination-projects .swiper-pagination-bullet-projects.swiper-pagination-bullet-projects-active {
+  color: #fff;
+  background: linear-gradient(45deg, rgb(246, 146, 89), rgb(241, 105, 117));
+}
 
 .contact {
   background-color: #454545;
@@ -204,6 +258,7 @@ body {
 body {
   color: white;
   overflow-y: hidden;
+  overflow-x: hidden;
   font-family: "Khmer Light";
 }
 

@@ -14,6 +14,22 @@ let swiper = new Swiper('.swiper-container', {
   },
 }) 
 
+let swiper2 = new Swiper('.swiper-projects', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: {
+        el: '.swiper-pagination-projects',
+        clickable: true,
+        renderBullet: function (index, className) {
+            return `<span class="swiper-pagination-bullet-projects"></span>`;
+        },
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
 
 
 

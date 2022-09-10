@@ -4,7 +4,7 @@
     
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    background-color: conf.$terciary-color;
+    background-color: conf.$secundary-light-color;
 
     .p-about{
         grid-column: 1 / 2;
