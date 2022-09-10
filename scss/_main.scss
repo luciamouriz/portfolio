@@ -8,18 +8,14 @@
 
 html,
 body {
-    position: relative;
     height: 100%;
 }
 
 body {
-    position: relative;
-    margin: 0;
-    padding: 0;
+    
     color: white;
     overflow-y: hidden;
     font-family: conf.fontFamily(khmer-light);
-    letter-spacing: 0.035rem;
 }
 
 
@@ -36,29 +32,56 @@ main {
 .contact {
     width: 100%;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-
-    .title-section{
-        display: flex;
-        flex-direction: column;
-        padding-top: 8rem;
-        padding-left: 10rem;
-
-        h1{
-            font-size: 5vw;
-        }
-
-       span{
-            background-color: conf.$primary-color;
-            height: 0.4rem;
-            width: 12rem;
-       } 
-    }
+   
 }
 
+.title-section{
+    grid-column: 1 / 2;
+    grid-row: 1;
+    
+    display: flex;
+    flex-direction: column;
+    padding-top: calc(4em + 4vw);
+    padding-left: 10vw;
 
+    h1{
+        font-size: calc(1em + 5vw);
+    }
+
+   span{
+        background-color: conf.$primary-color;
+        height: calc(0.2em + 0.2vw);
+        width: calc(2em + 8vw);
+   } 
+}
+
+@include conf.mobile{
+
+    //Header
+    .container-header{
+        gap: 60vw; 
+    }
+
+    //Pagination
+    .swiper-pagination{
+
+        left: 3%;
+        
+        .swiper-pagination-bullet {
+        
+            width: 3vw;
+            height: 2vh;
+        }
+    }
+
+    .about{
+
+      
+
+    }
+
+    
+}
 
 
 

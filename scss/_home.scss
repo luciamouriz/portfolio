@@ -10,29 +10,36 @@
     background-color: conf.$secundary-color;
     text-align: center;
 
-    .b-home {
+    img{
         position: absolute;
-        width: calc(25em + 70vw);
-        height: 100vh;
-        background-image: url(../img/parallax.png);
-        background-repeat: no-repeat;
-        background-size: 38% ;
-        background-position: center;
-      }
+        width: calc(0.5em + 1vw);
+        margin-top: calc(11em + 25vw);
+    }
 
     h1{
         font-size: calc(5em + 18vw);
         font-family: conf.fontFamily(colombo-bold);
-        text-shadow: 1vw 0.3vw 0px rgba(255, 42, 195, 0.70);
+        text-shadow: 1vw 0.3rem 0px rgba(255, 42, 195, 0.70);
         z-index: 3;
     }
 
     p{
         position: absolute;
-        margin-top: calc(7em + 9vw);
+        margin-top: calc(8em + 8vw);
         font-size: calc(0.8em + 1vw);
         font-family: conf.fontFamily(colombo-light);
         letter-spacing: 0.2vw;
     }
+
+    .b-h1 {
+        position: absolute;
+        width: calc(20em + 70vw);
+        height: 100vh;
+        background-image: url(../img/b-h1.png);
+        background-repeat: no-repeat;
+        background-size: 38% ;
+        background-position: center;
+      }
+
     
 }

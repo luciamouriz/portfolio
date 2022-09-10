@@ -1,12 +1,82 @@
 @use "config" as conf;
 
 .about {
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: conf.$terciary-color;
 
-    p{
-        width: 40%;
-        font-size: 1.3vw;
-        margin-left: 10rem;
+    .p-about{
+        grid-column: 1 / 2;
+        grid-row: 1;
+        width: 80%;
+        font-size: calc(0.6em + 0.6vw);
+        margin-top: 42%;
+        margin-left: 20%;
     }
 
-    background-color: conf.$terciary-color;
+    .b-img {
+        grid-column: 2 / 3;
+        position: absolute;
+        width: calc(20em + 70vw);
+        height: 100vh;
+        background-image: url(../img/b-img.png);
+        background-repeat: no-repeat;
+        background-size: 38%;
+        background-position: right;
+      }
+
+    .card-profile{
+        grid-column: 2 / 3;
+        display: grid;
+        grid-template-rows: repeat(3,1fr);
+        grid-row: 1;
+
+        .rrss{
+            margin-top: 10%;
+        }
+
+        img.git{
+            margin-left: 40%;
+            width: calc(1em + 3vw);
+            height: calc(1em + 3vw);
+        }
+
+        img.lin{
+            margin-left: 4%;
+            width: calc(1em + 3vw);
+            height: calc(1em + 3vw);
+        }
+
+        img{
+            width: calc(4em + 17vw);
+            height: calc(4em + 17vw);
+            margin-left: 30%;
+            margin-top: -10%;
+            z-index: 5;
+        }
+
+        .salute{
+            position: relative;
+            margin-top: 19%;
+            margin-left: -37%;
+            
+            p{
+                position: absolute;
+                font-size: calc(0.7em + 1vw);
+                color: conf.$primary-color;
+                margin-top: -4%;
+                margin-left: 34%;
+                z-index: 5;
+                
+            }
+
+            img{
+                position: relative;
+                width: calc(5em + 13vw);
+                height: calc(3em + 3vw);
+                z-index: 2;
+            }
+        }
+    }
 }

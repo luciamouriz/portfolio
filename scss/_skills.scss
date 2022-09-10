@@ -1,5 +1,42 @@
 @use "config" as conf;
 
 .skills {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     background-color: conf.$secundary-color;
+
+
+    img{
+        width: 70%;
+        margin-top: 15%;
+        margin-left: 4%;
+    }
+
+    .p-skills{
+        grid-column: 1 / 2;
+        grid-row: 1;
+        width: 60%;
+        font-size: calc(0.6em + 0.6vw);
+        margin-top: 40%;
+        margin-left: 20%;
+    }
+
+    .interests{
+        grid-column: 1 / 2;
+        grid-row: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        font-family: conf.fontFamily(khmer);
+        background-color: #21B1A7;
+        border-radius: 13px;
+        width: 60%;
+        height: 20vh;
+        padding: 3% 5% 20% 5%;
+        margin-top: 56%;
+        margin-left: 20%;
+    }
+
+    
+
 }

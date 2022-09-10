@@ -12,7 +12,7 @@ header {
     gap: 80vw; //media queries
 
     .logo{
-        width: calc(2em + 7vw);
+        width: calc(2em + 6vw);
         margin-left: 1.5rem;
     }
     
@@ -24,8 +24,8 @@ header {
     
         span{
             border-radius: 0.5rem;
-            width: calc(2em + 4vw);
-            height: 0.8vh;
+            width: calc(2em + 3vw);
+            height: 0.7vh;
             background-color: conf.$primary-color;
         }
     }

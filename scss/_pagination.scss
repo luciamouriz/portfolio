@@ -2,12 +2,12 @@
 
 .swiper-pagination{
     
-    left: 1%; //media queries
-    margin-top: calc(8em + 10vw); 
+    left: 1%; 
+    margin-top: calc(9em + 9vw); 
 
     .swiper-pagination-bullet {
         
-        width: calc(0.8em + 0.6vw);
+        width: 1.5vw;
         height: 3vh;
         border-radius: 100%;
         text-align: center;
