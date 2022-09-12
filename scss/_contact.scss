@@ -3,6 +3,8 @@
 .contact{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(5,1fr);
+    justify-items: center;
     background-color: conf.$secundary-color;
 
     .p-contact{
@@ -91,8 +93,8 @@
         font-size: 0.8em;
         margin-left: 20%;
         margin-top: 7%;
+
         span{
-            
             border-radius: 0.5em;
             width: 23vw;
             height: 0.5vh;

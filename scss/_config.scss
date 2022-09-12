@@ -14,8 +14,8 @@ $font-family:(
     khmer-light: "Khmer Light",
 );
 
-$font_size: (
-    font-xl: 23px
+$font-size: (
+    font-body: calc(0.6em + 0.6vw),
 
 );
 
@@ -23,6 +23,10 @@ $font_size: (
 //Añadimos el mapa de fuentes
 @function fontFamily($family-value){
     @return map-get($font-family, $family-value );
+}
+
+@function fontSize($size-value){
+    @return map-get($font-size, $size-value );
 }
 
 @mixin flexbox-row{

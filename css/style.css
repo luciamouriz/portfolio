@@ -56,104 +56,99 @@
 .about {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  justify-items: center;
   background-color: #4D4D4D;
 }
 .about .p-about {
   grid-column: 1/2;
-  grid-row: 1;
+  grid-row: 3/4;
   width: 80%;
+  margin-top: 2vw;
   font-size: calc(0.6em + 0.6vw);
-  margin-top: 42%;
-  margin-left: 20%;
+  justify-self: end;
 }
 .about .b-img {
   grid-column: 2/3;
+  grid-row: 2/5;
   position: absolute;
   width: calc(20em + 70vw);
   height: 100vh;
   background-image: url(../img/b-img.png);
   background-repeat: no-repeat;
   background-size: 38%;
-  background-position: right;
+  background-position: 93%;
 }
 .about .card-profile {
   grid-column: 2/3;
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  grid-row: 1;
+  grid-row: 2/6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
 }
 .about .card-profile .rrss {
-  margin-top: 10%;
+  display: flex;
+  gap: 1em;
 }
 .about .card-profile img.git {
-  margin-left: 40%;
   width: calc(1em + 3vw);
   height: calc(1em + 3vw);
 }
 .about .card-profile img.lin {
-  margin-left: 4%;
   width: calc(1em + 3vw);
   height: calc(1em + 3vw);
 }
 .about .card-profile img {
   width: calc(4em + 17vw);
   height: calc(4em + 17vw);
-  margin-left: 30%;
-  margin-top: -10%;
   z-index: 5;
 }
-.about .card-profile .salute {
-  position: relative;
-  margin-top: 19%;
-  margin-left: -37%;
-}
-.about .card-profile .salute p {
-  position: absolute;
+.about .card-profile p {
+  background-color: #B4B4B4;
+  text-align: center;
+  width: 70%;
+  padding: 4%;
+  border-radius: 0.5em;
   font-size: calc(0.7em + 1vw);
   color: #FF2AC3;
-  margin-top: -4%;
-  margin-left: 34%;
   z-index: 5;
-}
-.about .card-profile .salute img {
-  position: relative;
-  width: calc(5em + 13vw);
-  height: calc(3em + 3vw);
-  z-index: 2;
+  margin-right: 100%;
 }
 
 .skills {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  justify-items: center;
   background-color: #454545;
 }
 .skills img {
+  grid-column: 2/3;
+  grid-row: 2/5;
   width: 70%;
-  margin-top: 15%;
-  margin-left: 4%;
+  justify-self: start;
 }
 .skills .p-skills {
+  margin-top: 2vw;
   grid-column: 1/2;
-  grid-row: 1;
+  grid-row: 3/4;
   width: 60%;
   font-size: calc(0.6em + 0.6vw);
-  margin-top: 40%;
-  margin-left: 20%;
 }
 .skills .interests {
   grid-column: 1/2;
-  grid-row: 1;
+  grid-row: 4/5;
   display: flex;
   flex-direction: column;
   gap: 15px;
+  font-size: calc(0.6em + 0.6vw);
   font-family: "Khmer";
   background-color: #21B1A7;
   border-radius: 13px;
   width: 60%;
   height: 20vh;
   padding: 3% 5% 20% 5%;
-  margin-top: 56%;
-  margin-left: 20%;
 }
 
 .projects {
@@ -216,6 +211,8 @@
 .contact {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  justify-items: center;
   background-color: #454545;
 }
 .contact .p-contact {
@@ -368,11 +365,10 @@ main {
 
 .title-section {
   grid-column: 1/2;
-  grid-row: 1;
+  grid-row: 2/3;
+  width: 60%;
   display: flex;
   flex-direction: column;
-  padding-top: calc(4em + 4vw);
-  padding-left: 10vw;
 }
 .title-section h1 {
   font-size: calc(1em + 5vw);
@@ -393,5 +389,43 @@ main {
   .swiper-pagination .swiper-pagination-bullet {
     width: 3vw;
     height: 2vh;
+  }
+  .about {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .about .p-about {
+    grid-row: 2/3;
+    grid-column: 1/3;
+    margin-left: 10%;
+    margin-top: -40%;
+  }
+  .about .b-img {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-size: 35%;
+    background-position: 38vw 20vw;
+  }
+  .about .card-profile {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    margin-top: 35%;
+  }
+  .about .card-profile .rrss {
+    margin-top: -23%;
+    margin-left: 3%;
+  }
+  .about .card-profile img.git {
+    margin-left: 10%;
+  }
+  .about .card-profile img.lin {
+    margin-left: 2%;
+  }
+  .about .card-profile img {
+    margin-left: 50%;
+    margin-top: -25%;
+  }
+  .about .card-profile .salute p {
+    margin-left: 34%;
   }
 }

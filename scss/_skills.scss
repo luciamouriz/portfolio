@@ -3,38 +3,41 @@
 .skills {
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(5,1fr);
+    justify-items: center;
+
     background-color: conf.$secundary-color;
 
-
     img{
+        grid-column: 2 / 3;
+        grid-row: 2 / 5;
         width: 70%;
-        margin-top: 15%;
-        margin-left: 4%;
+        justify-self: start;
+        
     }
 
     .p-skills{
+        margin-top: 2vw;
         grid-column: 1 / 2;
-        grid-row: 1;
+        grid-row: 3 / 4;
         width: 60%;
-        font-size: calc(0.6em + 0.6vw);
-        margin-top: 40%;
-        margin-left: 20%;
+        font-size: conf.fontSize(font-body);
+        
     }
 
     .interests{
         grid-column: 1 / 2;
-        grid-row: 1;
+        grid-row: 4 / 5;
         display: flex;
         flex-direction: column;
         gap: 15px;
+        font-size: conf.fontSize(font-body);
         font-family: conf.fontFamily(khmer);
         background-color: #21B1A7;
         border-radius: 13px;
         width: 60%;
         height: 20vh;
         padding: 3% 5% 20% 5%;
-        margin-top: 56%;
-        margin-left: 20%;
     }
 
     
