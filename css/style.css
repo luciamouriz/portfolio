@@ -12,6 +12,9 @@
   opacity: 1;
   background: rgba(255, 255, 255, 0.2);
 }
+.swiper-pagination.close {
+  display: none;
+}
 .swiper-pagination .swiper-pagination-bullet-active {
   background: #FF2AC3;
 }
@@ -31,10 +34,15 @@
   margin-top: calc(11em + 25vw);
 }
 .home h1 {
+  position: absolute;
   font-size: calc(5em + 18vw);
   font-family: "Post No Bills Colombo Bold";
-  text-shadow: 1vw 0.3rem 0px rgba(255, 42, 195, 0.7);
   z-index: 3;
+}
+.home .h1-2 {
+  margin-left: 0.1em;
+  margin-top: 10px;
+  color: #FF2AC3;
 }
 .home p {
   position: absolute;
@@ -51,6 +59,30 @@
   background-repeat: no-repeat;
   background-size: 38%;
   background-position: center;
+}
+.home .h1-2 {
+  -webkit-animation: neon 4s ease infinite;
+          animation: neon 4s ease infinite;
+}
+@-webkit-keyframes neon {
+  0%, 100% {
+    text-shadow: 0 0 1vw white;
+    color: rgb(88, 88, 88);
+  }
+  50% {
+    text-shadow: 0 0 0.5vw #FF2AC3;
+    color: #FF2AC3;
+  }
+}
+@keyframes neon {
+  0%, 100% {
+    text-shadow: 0 0 1vw white;
+    color: rgb(88, 88, 88);
+  }
+  50% {
+    text-shadow: 0 0 0.5vw #FF2AC3;
+    color: #FF2AC3;
+  }
 }
 
 .about {
@@ -323,6 +355,31 @@ header {
   position: fixed;
   z-index: 2;
 }
+header .nav {
+  visibility: hidden;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #454545;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+  font-size: 2vw;
+  padding-left: 2em;
+  cursor: pointer;
+}
+header .nav h1 {
+  width: 25%;
+  height: 85px;
+}
+header .nav h1:hover {
+  border-bottom: 10px solid #FF2AC3;
+}
+header .nav.show {
+  visibility: visible;
+}
 
 .container-header {
   display: flex;
@@ -338,12 +395,27 @@ header {
   display: flex;
   flex-direction: column;
   gap: calc(0.3em + 0.8vw);
+  cursor: pointer;
+  z-index: 4;
 }
 .container-header .menu span {
+  transition: all 0.2s linear;
+  transform-origin: 4px 0px;
   border-radius: 0.5rem;
   width: calc(2em + 3vw);
   height: 0.7vh;
   background-color: #FF2AC3;
+}
+.container-header .menu.close span {
+  opacity: 1;
+  transform: rotate(35deg) translate(0px, 0px);
+  background: #29D7CC;
+}
+.container-header .menu.close span:nth-child(2) {
+  transform: rotate(-35deg) translate(-9px, 11px);
+}
+.container-header .menu.close span:nth-child(3) {
+  display: none;
 }
 
 * {

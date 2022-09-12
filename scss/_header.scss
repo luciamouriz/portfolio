@@ -3,13 +3,43 @@
 header {
     position: fixed;
     z-index: 2;
+
+    .nav{
+        visibility: hidden;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background-color: conf.$secundary-color;
+        z-index: 3;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1em;
+        font-size: 2vw;
+        padding-left: 2em;
+        cursor: pointer;
+
+        h1{
+            width: 25%;
+            height: 85px;
+            &:hover{
+                border-bottom: 10px solid conf.$primary-color;
+                
+            }
+        }
+    }
+
+    .nav.show{
+        visibility: visible;
+    }
 }
 
 .container-header{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 80vw; //media queries
+    gap: 80vw; 
 
     .logo{
         width: calc(2em + 6vw);
@@ -21,12 +51,32 @@ header {
         display: flex;
         flex-direction: column;
         gap: calc(0.3em + 0.8vw);
-    
+        cursor: pointer;
+        z-index: 4;
+
         span{
+            transition: all .2s linear;
+            transform-origin: 4px 0px;
             border-radius: 0.5rem;
             width: calc(2em + 3vw);
             height: 0.7vh;
             background-color: conf.$primary-color;
         }
+        
+        &.close span {
+            opacity: 1;
+            transform: rotate(35deg) translate(0px, 0px);
+            background: conf.$acento-color;
+        }
+        
+        &.close span:nth-child(2){
+            transform: rotate(-35deg) translate(-9px, 11px);
+        }
+        
+        &.close span:nth-child(3){
+            display: none;
+        }
     }
+
+    
 }
