@@ -1,13 +1,13 @@
 @use "config" as conf;
 
-.contact{
+.contact {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(5,1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     justify-items: center;
     background-color: conf.$secundary-color;
 
-    .p-contact{
+    .p-contact {
         grid-column: 1 / 2;
         grid-row: 3 / 4;
         width: 60%;
@@ -15,63 +15,67 @@
         font-size: calc(0.6em + 0.6vw);
     }
 
-    .b-contact {
+    img{
         grid-column: 2 / 3;
+        grid-row: 3 / 5;
+        left: 54%;
+        align-self: center;
         position: absolute;
-        width: calc(20em + 70vw);
-        height: 100vh;
-        background-image: url(../img/b-form.png);
-        background-repeat: no-repeat;
-        background-size: 48%;
-        background-position: right;
-      }
+        width: calc(5em + 35vw);
+        height: calc(5em + 30vw);
+        z-index: 0;
+    }
 
-      form{
+
+    form {
         width: 60%;
         grid-column: 2 / 3;
-        grid-row: 3 /  5;
+        grid-row: 3 / 5;
         display: flex;
         flex-direction: column;
         gap: 0.7em;
         z-index: 4;
-        
+        align-self: center;
+        justify-self: center;
 
-        label{
+        label {
             display: flex;
             flex-direction: row;
             gap: 0.7em;
         }
-        
-        input::placeholder , textarea::placeholder{
+
+        input::placeholder,
+        textarea::placeholder {
             font-size: 1em;
             font-family: conf.fontFamily(khmer);
         }
 
-        input.name{
+        input.name {
             width: 100%;
             height: 6vh;
-            
+
         }
 
-        input.email{
-            width: 100%;
-            height: 6vh;
-        }
-
-        input.subject{
+        input.email {
             width: 100%;
             height: 6vh;
         }
 
-        input, textarea{
+        input.subject {
+            width: 100%;
+            height: 6vh;
+        }
+
+        input,
+        textarea {
             font-size: 1em;
             font-family: conf.fontFamily(khmer);
             padding: 1em 1em 1em 1em;
             border-radius: 0.4em;
             border: 1.5px solid conf.$acento-color;
         }
-    
-        button{
+
+        button {
             border: 0;
             font-size: 1em;
             color: white;
@@ -79,12 +83,13 @@
             background-color: conf.$acento-color;
             border-radius: 0.4em;
             width: 25%;
-            height: 8%;
+            height: 5vh;
+            cursor: pointer;
         }
-      }
+    }
 
 
-      .credits{
+    .credits {
         grid-column: 1 / 2;
         grid-row: 5 / 6;
         display: flex;
@@ -92,12 +97,12 @@
         gap: 1em;
         font-size: 0.8em;
         margin-left: -12%;
-        
-        span{
+
+        span {
             border-radius: 0.5em;
             width: 23vw;
             height: 0.5vh;
             background-color: conf.$acento-color;
         }
-      }
+    }
 }

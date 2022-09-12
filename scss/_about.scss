@@ -17,19 +17,6 @@
         margin-top: 2vw;
     }
 
-    .b-img {
-        grid-column: 2 / 3;
-        grid-row: 2 / 5;
-        
-        position: absolute;
-        width: calc(20em + 70vw);
-        height: 100vh;
-        background-image: url(../img/b-img.png);
-        background-repeat: no-repeat;
-        background-size: 38%;
-        background-position: 93%;
-      }
-
     .card-profile{
         grid-column: 2 / 3;
         grid-row: 2 / 4;       
@@ -39,9 +26,31 @@
         align-items: center;
         gap: 1em;
 
+        p{
+           visibility: hidden;
+        }
+
+        .p-animation{
+            visibility: visible;
+            background-color: #B4B4B4;
+            text-align: center;
+            width: 70%;
+            padding: 4%;
+            border-radius: 0.5em;
+            font-size: calc(0.7em + 1vw);
+            color: conf.$primary-color;
+            z-index: 5;
+            margin-right: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typewriter 1s steps(50) 1 normal both;
+        }
+
+
         .rrss{
             display: flex;
             gap: 1em;
+            z-index: 4;
         }
 
         img.git{
@@ -60,19 +69,27 @@
             z-index: 5;
         }
 
-        
-        p{
-            background-color: #B4B4B4;
-            text-align: center;
-            width: 70%;
-            padding: 4%;
-            border-radius: 0.5em;
-            font-size: calc(0.7em + 1vw);
-            color: conf.$primary-color;
-            z-index: 5;
-            margin-right: 100%;
-            
+        .b-img {
+            position: absolute;
+            width: calc(4em + 30vw);
+            height: calc(4em + 30vw);
+            z-index: 0;
         }
+
         
     }
+
+    @keyframes typewriter {
+        from {
+          width: 0;
+        }
+        
+        to {
+          width: 8em;
+        }
+      }
+
 }
+
+
+

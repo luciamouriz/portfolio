@@ -10,7 +10,7 @@
     img{
         grid-column: 2 / 3;
         grid-row: 2 / 5;
-        width: 70%;
+        width: calc(1em + 35vw);
         justify-self: start;
         
     }

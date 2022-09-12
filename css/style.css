@@ -68,17 +68,6 @@
   justify-self: end;
   margin-top: 2vw;
 }
-.about .b-img {
-  grid-column: 2/3;
-  grid-row: 2/5;
-  position: absolute;
-  width: calc(20em + 70vw);
-  height: 100vh;
-  background-image: url(../img/b-img.png);
-  background-repeat: no-repeat;
-  background-size: 38%;
-  background-position: 93%;
-}
 .about .card-profile {
   grid-column: 2/3;
   grid-row: 2/4;
@@ -88,9 +77,29 @@
   align-items: center;
   gap: 1em;
 }
+.about .card-profile p {
+  visibility: hidden;
+}
+.about .card-profile .p-animation {
+  visibility: visible;
+  background-color: #B4B4B4;
+  text-align: center;
+  width: 70%;
+  padding: 4%;
+  border-radius: 0.5em;
+  font-size: calc(0.7em + 1vw);
+  color: #FF2AC3;
+  z-index: 5;
+  margin-right: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: typewriter 1s steps(50) 1 normal both;
+          animation: typewriter 1s steps(50) 1 normal both;
+}
 .about .card-profile .rrss {
   display: flex;
   gap: 1em;
+  z-index: 4;
 }
 .about .card-profile img.git {
   width: calc(1em + 3vw);
@@ -105,16 +114,27 @@
   height: calc(4em + 17vw);
   z-index: 5;
 }
-.about .card-profile p {
-  background-color: #B4B4B4;
-  text-align: center;
-  width: 70%;
-  padding: 4%;
-  border-radius: 0.5em;
-  font-size: calc(0.7em + 1vw);
-  color: #FF2AC3;
-  z-index: 5;
-  margin-right: 100%;
+.about .card-profile .b-img {
+  position: absolute;
+  width: calc(4em + 30vw);
+  height: calc(4em + 30vw);
+  z-index: 0;
+}
+@-webkit-keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 8em;
+  }
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 8em;
+  }
 }
 
 .skills {
@@ -127,7 +147,7 @@
 .skills img {
   grid-column: 2/3;
   grid-row: 2/5;
-  width: 70%;
+  width: calc(1em + 35vw);
   justify-self: start;
 }
 .skills .p-skills {
@@ -213,15 +233,15 @@
   margin-top: 2vw;
   font-size: calc(0.6em + 0.6vw);
 }
-.contact .b-contact {
+.contact img {
   grid-column: 2/3;
+  grid-row: 3/5;
+  left: 54%;
+  align-self: center;
   position: absolute;
-  width: calc(20em + 70vw);
-  height: 100vh;
-  background-image: url(../img/b-form.png);
-  background-repeat: no-repeat;
-  background-size: 48%;
-  background-position: right;
+  width: calc(5em + 35vw);
+  height: calc(5em + 30vw);
+  z-index: 0;
 }
 .contact form {
   width: 60%;
@@ -231,6 +251,8 @@
   flex-direction: column;
   gap: 0.7em;
   z-index: 4;
+  align-self: center;
+  justify-self: center;
 }
 .contact form label {
   display: flex;
@@ -245,7 +267,8 @@
   font-size: 1em;
   font-family: "Khmer";
 }
-.contact form input::placeholder, .contact form textarea::placeholder {
+.contact form input::placeholder,
+.contact form textarea::placeholder {
   font-size: 1em;
   font-family: "Khmer";
 }
@@ -261,7 +284,8 @@
   width: 100%;
   height: 6vh;
 }
-.contact form input, .contact form textarea {
+.contact form input,
+.contact form textarea {
   font-size: 1em;
   font-family: "Khmer";
   padding: 1em 1em 1em 1em;
@@ -276,7 +300,8 @@
   background-color: #29D7CC;
   border-radius: 0.4em;
   width: 25%;
-  height: 8%;
+  height: 5vh;
+  cursor: pointer;
 }
 .contact .credits {
   grid-column: 1/2;
@@ -365,10 +390,31 @@ main {
 .title-section h1 {
   font-size: calc(1em + 5vw);
 }
-.title-section span {
+.title-section .line {
+  transform: translateX(-20em);
   background-color: #FF2AC3;
   height: calc(0.2em + 0.2vw);
   width: calc(2em + 8vw);
+}
+.title-section .line-animation {
+  -webkit-animation: transicion 1s steps(50) 1 normal both;
+          animation: transicion 1s steps(50) 1 normal both;
+}
+@-webkit-keyframes transicion {
+  from {
+    transform: translateX(-20em);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes transicion {
+  from {
+    transform: translateX(-20em);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 @media (max-width: 767px) {
