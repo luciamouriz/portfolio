@@ -11,6 +11,7 @@
         grid-column: 1 / 2;
         grid-row: 3 / 4;
         width: 60%;
+        height: 250px;
         margin-top: 2vw;
         font-size: calc(0.6em + 0.6vw);
     }
@@ -18,17 +19,17 @@
     img{
         grid-column: 2 / 3;
         grid-row: 3 / 5;
-        left: 54%;
+        left: 50%;
         align-self: center;
         position: absolute;
-        width: calc(5em + 35vw);
-        height: calc(5em + 30vw);
+        width: calc(5em + 43vw);
+        height: calc(5em + 38vw);
         z-index: 0;
     }
 
 
     form {
-        width: 60%;
+        width: 70%;
         grid-column: 2 / 3;
         grid-row: 3 / 5;
         display: flex;
@@ -46,24 +47,25 @@
 
         input::placeholder,
         textarea::placeholder {
-            font-size: 1em;
+            font-size: 1.2em;
             font-family: conf.fontFamily(khmer);
+            color:rgb(191, 191, 191);
         }
 
         input.name {
             width: 100%;
-            height: 6vh;
+            height: 7vh;
 
         }
 
         input.email {
             width: 100%;
-            height: 6vh;
+            height: 7vh;
         }
 
         input.subject {
             width: 100%;
-            height: 6vh;
+            height: 7vh;
         }
 
         input,

@@ -12,7 +12,18 @@ let swiper = new Swiper('.swiper-container', {
             return `<span class="swiper-pagination-bullet"></span>`;
         },
   },
+  
 }) 
+
+
+document.querySelector(".nav").querySelectorAll("h1").forEach(item => {
+  item.addEventListener("click", () => {
+    swiper.slideTo(1);
+    console.log("la")
+  }
+  
+)});
+
 
 let swiper2 = new Swiper('.swiper-projects', {
     slidesPerView: 1,
@@ -39,11 +50,12 @@ swiper.on("transitionEnd", function(e){
     saludo.classList.remove('p-animation');
     line[1].classList.remove("line-animation")
   }
-
+  slideIndex === 4 ? line[4].classList.add("line-animation") : line[4].classList.remove("line-animation");
   slideIndex === 2 ? line[2].classList.add("line-animation") : line[2].classList.remove("line-animation");
   slideIndex === 3 ? line[3].classList.add("line-animation") : line[3].classList.remove("line-animation");
-  slideIndex === 4 ? line[4].classList.add("line-animation") : line[4].classList.remove("line-animation");
   
+
+  console.log(slideIndex)
 });
 
 

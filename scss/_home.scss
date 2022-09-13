@@ -10,12 +10,14 @@
     background-color: conf.$secundary-color;
     text-align: center;
 
-    img{
+    
+      img{
         position: absolute;
         width: calc(0.5em + 1vw);
-        margin-top: calc(11em + 25vw);
+        margin-top: calc(11em + 26vw);
+        animation: arrow 0.5s 2s infinite ease-out alternate;
     }
-
+  
     h1{
         position: absolute;
         font-size: calc(5em + 18vw);
@@ -28,8 +30,8 @@
         margin-left: 0.1em;
         margin-top: 10px;
         color: conf.$primary-color;
-    }
-
+        animation: neon 4s ease infinite;
+    } 
 
 
     p{
@@ -50,20 +52,30 @@
         background-position: center;
       }
 
-       .h1-2 {
-        animation: neon 4s  ease infinite;
-       
-      }
+    
       
       @keyframes neon {
         0%,
         100% {
-          text-shadow: 0 0 1vw white;
+          text-shadow: 0 0 1vw;
           color:rgb(88, 88, 88);
         }
         50% {
-          text-shadow: 0 0 .5vw  conf.$primary-color;
-          color: conf.$primary-color;
+          text-shadow: 0 0 .5vw ;
+          color: #ca1f9a;
         }
       } 
+
+      @keyframes arrow {
+        from {
+          transform: translateY(-1em);
+        }
+        
+        to {
+            transform: translateY(4);
+        }
+      } 
+
+
+   
 }

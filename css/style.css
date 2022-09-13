@@ -31,7 +31,9 @@
 .home img {
   position: absolute;
   width: calc(0.5em + 1vw);
-  margin-top: calc(11em + 25vw);
+  margin-top: calc(11em + 26vw);
+  -webkit-animation: arrow 0.5s 2s infinite ease-out alternate;
+          animation: arrow 0.5s 2s infinite ease-out alternate;
 }
 .home h1 {
   position: absolute;
@@ -43,6 +45,8 @@
   margin-left: 0.1em;
   margin-top: 10px;
   color: #FF2AC3;
+  -webkit-animation: neon 4s ease infinite;
+          animation: neon 4s ease infinite;
 }
 .home p {
   position: absolute;
@@ -60,28 +64,40 @@
   background-size: 38%;
   background-position: center;
 }
-.home .h1-2 {
-  -webkit-animation: neon 4s ease infinite;
-          animation: neon 4s ease infinite;
-}
 @-webkit-keyframes neon {
   0%, 100% {
-    text-shadow: 0 0 1vw white;
+    text-shadow: 0 0 1vw;
     color: rgb(88, 88, 88);
   }
   50% {
-    text-shadow: 0 0 0.5vw #FF2AC3;
-    color: #FF2AC3;
+    text-shadow: 0 0 0.5vw;
+    color: #ca1f9a;
   }
 }
 @keyframes neon {
   0%, 100% {
-    text-shadow: 0 0 1vw white;
+    text-shadow: 0 0 1vw;
     color: rgb(88, 88, 88);
   }
   50% {
-    text-shadow: 0 0 0.5vw #FF2AC3;
-    color: #FF2AC3;
+    text-shadow: 0 0 0.5vw;
+    color: #ca1f9a;
+  }
+}
+@-webkit-keyframes arrow {
+  from {
+    transform: translateY(-1em);
+  }
+  to {
+    transform: translateY(4);
+  }
+}
+@keyframes arrow {
+  from {
+    transform: translateY(-1em);
+  }
+  to {
+    transform: translateY(4);
   }
 }
 
@@ -94,15 +110,16 @@
 }
 .about .p-about {
   grid-column: 1/2;
-  grid-row: 3/4;
+  grid-row: 3/5;
   width: 80%;
   font-size: calc(0.6em + 0.6vw);
   justify-self: end;
-  margin-top: 2vw;
+  margin-top: 3vw;
+  height: 200px;
 }
 .about .card-profile {
   grid-column: 2/3;
-  grid-row: 2/4;
+  grid-row: 2/5;
   align-self: center;
   display: flex;
   flex-direction: column;
@@ -117,7 +134,7 @@
   background-color: #B4B4B4;
   text-align: center;
   width: 70%;
-  padding: 4%;
+  padding: 0.4em;
   border-radius: 0.5em;
   font-size: calc(0.7em + 1vw);
   color: #FF2AC3;
@@ -148,7 +165,7 @@
 }
 .about .card-profile .b-img {
   position: absolute;
-  width: calc(4em + 30vw);
+  width: calc(4em + 28vw);
   height: calc(4em + 30vw);
   z-index: 0;
 }
@@ -157,7 +174,7 @@
     width: 0;
   }
   to {
-    width: 8em;
+    width: 75%;
   }
 }
 @keyframes typewriter {
@@ -165,7 +182,7 @@
     width: 0;
   }
   to {
-    width: 8em;
+    width: 75%;
   }
 }
 
@@ -185,7 +202,7 @@
 .skills .p-skills {
   margin-top: 2vw;
   grid-column: 1/2;
-  grid-row: 3/4;
+  grid-row: 3/5;
   width: 60%;
   font-size: calc(0.6em + 0.6vw);
 }
@@ -198,8 +215,8 @@
   font-size: calc(0.6em + 0.6vw);
   font-family: "Khmer";
   background-color: #21B1A7;
-  border-radius: 13px;
-  padding: 3% 20% 5% 5%;
+  border-radius: 10px;
+  padding: 2% 20% 2% 5%;
 }
 
 .projects {
@@ -262,21 +279,22 @@
   grid-column: 1/2;
   grid-row: 3/4;
   width: 60%;
+  height: 250px;
   margin-top: 2vw;
   font-size: calc(0.6em + 0.6vw);
 }
 .contact img {
   grid-column: 2/3;
   grid-row: 3/5;
-  left: 54%;
+  left: 50%;
   align-self: center;
   position: absolute;
-  width: calc(5em + 35vw);
-  height: calc(5em + 30vw);
+  width: calc(5em + 43vw);
+  height: calc(5em + 38vw);
   z-index: 0;
 }
 .contact form {
-  width: 60%;
+  width: 70%;
   grid-column: 2/3;
   grid-row: 3/5;
   display: flex;
@@ -292,29 +310,32 @@
   gap: 0.7em;
 }
 .contact form input::-moz-placeholder, .contact form textarea::-moz-placeholder {
-  font-size: 1em;
+  font-size: 1.2em;
   font-family: "Khmer";
+  color: rgb(191, 191, 191);
 }
 .contact form input:-ms-input-placeholder, .contact form textarea:-ms-input-placeholder {
-  font-size: 1em;
+  font-size: 1.2em;
   font-family: "Khmer";
+  color: rgb(191, 191, 191);
 }
 .contact form input::placeholder,
 .contact form textarea::placeholder {
-  font-size: 1em;
+  font-size: 1.2em;
   font-family: "Khmer";
+  color: rgb(191, 191, 191);
 }
 .contact form input.name {
   width: 100%;
-  height: 6vh;
+  height: 7vh;
 }
 .contact form input.email {
   width: 100%;
-  height: 6vh;
+  height: 7vh;
 }
 .contact form input.subject {
   width: 100%;
-  height: 6vh;
+  height: 7vh;
 }
 .contact form input,
 .contact form textarea {
@@ -412,7 +433,7 @@ header .nav.show {
   background: #29D7CC;
 }
 .container-header .menu.close span:nth-child(2) {
-  transform: rotate(-35deg) translate(-9px, 11px);
+  transform: rotate(-35deg) translate(-12px, 11px);
 }
 .container-header .menu.close span:nth-child(3) {
   display: none;
@@ -469,8 +490,8 @@ main {
   width: calc(2em + 8vw);
 }
 .title-section .line-animation {
-  -webkit-animation: transicion 1s steps(50) 1 normal both;
-          animation: transicion 1s steps(50) 1 normal both;
+  -webkit-animation: transicion 1s normal both;
+          animation: transicion 1s normal both;
 }
 @-webkit-keyframes transicion {
   from {

@@ -47,7 +47,6 @@ main {
     display: flex;
     flex-direction: column;
 
-
     h1{
         font-size: calc(1em + 5vw);
 
@@ -63,7 +62,7 @@ main {
    } 
 
    .line-animation{
-        animation: transicion 1s steps(50) 1 normal both;
+        animation: transicion 1s normal both;
    }
    
    @keyframes transicion {
@@ -77,6 +76,7 @@ main {
   }
 
 }
+
 
 @include conf.mobile{
     //Header

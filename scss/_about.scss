@@ -10,16 +10,17 @@
 
     .p-about{
         grid-column: 1 / 2;
-        grid-row: 3 / 4;
+        grid-row: 3 / 5;
         width: 80%;
         font-size: conf.fontSize(font-body);
         justify-self: end;
-        margin-top: 2vw;
+        margin-top: 3vw;
+        height: 200px;
     }
 
     .card-profile{
         grid-column: 2 / 3;
-        grid-row: 2 / 4;       
+        grid-row: 2 / 5;       
         align-self: center;
         display: flex;
         flex-direction: column;
@@ -35,7 +36,7 @@
             background-color: #B4B4B4;
             text-align: center;
             width: 70%;
-            padding: 4%;
+            padding: 0.4em;
             border-radius: 0.5em;
             font-size: calc(0.7em + 1vw);
             color: conf.$primary-color;
@@ -71,7 +72,7 @@
 
         .b-img {
             position: absolute;
-            width: calc(4em + 30vw);
+            width: calc(4em + 28vw);
             height: calc(4em + 30vw);
             z-index: 0;
         }
@@ -85,7 +86,7 @@
         }
         
         to {
-          width: 8em;
+          width: 75%;
         }
       }
 

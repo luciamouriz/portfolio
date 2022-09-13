@@ -18,10 +18,9 @@
     .p-skills{
         margin-top: 2vw;
         grid-column: 1 / 2;
-        grid-row: 3 / 4;
+        grid-row: 3 / 5;
         width: 60%;
         font-size: conf.fontSize(font-body);
-        
     }
 
     .interests{
@@ -33,8 +32,9 @@
         font-size: conf.fontSize(font-body);
         font-family: conf.fontFamily(khmer);
         background-color: #21B1A7;
-        border-radius: 13px;
-        padding: 3% 20% 5% 5%;
+        border-radius: 10px;
+        padding: 2% 20% 2% 5%;
+        
     }
 
     
