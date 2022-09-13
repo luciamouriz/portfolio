@@ -15,15 +15,21 @@ let swiper = new Swiper('.swiper-container', {
   
 }) 
 
-
+//Menu de navegacion
 document.querySelector(".nav").querySelectorAll("h1").forEach(item => {
   item.addEventListener("click", () => {
-    swiper.slideTo(1);
-    console.log("la")
+    let atr = item.getAttribute("data-index")
+    if(atr == 1) swiper.slideTo(1)
+    if(atr == 2) swiper.slideTo(2)
+    if(atr == 3) swiper.slideTo(3)
+    if(atr == 4) swiper.slideTo(4)
+    if(atr == 5) swiper.slideTo(5)
+    
   }
   
 )});
 
+document.getElementById("logo").addEventListener("click", () => {swiper.slideTo(1)})
 
 let swiper2 = new Swiper('.swiper-projects', {
     slidesPerView: 1,
@@ -55,7 +61,7 @@ swiper.on("transitionEnd", function(e){
   slideIndex === 3 ? line[3].classList.add("line-animation") : line[3].classList.remove("line-animation");
   
 
-  console.log(slideIndex)
+  
 });
 
 
