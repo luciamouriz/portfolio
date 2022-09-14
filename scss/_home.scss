@@ -11,10 +11,10 @@
     text-align: center;
 
     
-      img{
+    .arrow{
         position: absolute;
         width: calc(0.5em + 1vw);
-        margin-top: calc(11em + 26vw);
+        margin-top: calc(13em + 25vw);
         animation: arrow 0.5s 2s infinite ease-out alternate;
     }
   
@@ -43,13 +43,9 @@
     }
 
     .b-h1 {
-        position: absolute;
-        width: calc(20em + 70vw);
-        height: 100vh;
-        background-image: url(../img/b-h1.png);
-        background-repeat: no-repeat;
-        background-size: 38% ;
-        background-position: center;
+        
+        width: 35vw;
+        height: 90vh;
       }
 
     
