@@ -1,7 +1,7 @@
 .swiper-pagination {
   width: 3%;
   left: 1%;
-  margin-top: calc(9em + 9vw);
+  margin-top: 19vw;
 }
 .swiper-pagination .swiper-pagination-bullet {
   width: 1.5vw;
@@ -99,7 +99,7 @@
 .about {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
   justify-items: center;
   background-color: #4D4D4D;
 }
@@ -107,21 +107,21 @@
   grid-column: 1/2;
   grid-row: 3/5;
   width: 80%;
-  font-size: calc(0.6em + 0.6vw);
+  font-size: calc(0.8em + 0.6vw);
   justify-self: end;
   margin-top: 3vw;
   height: 200px;
 }
 .about .card-profile {
   grid-column: 2/3;
-  grid-row: 2/5;
+  grid-row: 3/5;
   align-self: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1em;
 }
-.about .card-profile p {
+.about .card-profile .saludo {
   visibility: hidden;
 }
 .about .card-profile .p-animation {
@@ -154,15 +154,15 @@
   height: calc(1em + 3vw);
 }
 .about .card-profile img {
-  width: calc(4em + 17vw);
-  height: calc(4em + 17vw);
+  width: calc(5em + 17vw);
+  height: calc(5em + 17vw);
   z-index: 5;
 }
 .about .card-profile .b-img {
   position: absolute;
-  top: 4%;
-  width: calc(5em + 32vw);
-  height: calc(4em + 40vw);
+  top: calc(2em + 0.1vw);
+  width: calc(9em + 30vw);
+  height: calc(10em + 33vw);
   z-index: 0;
 }
 @-webkit-keyframes typewriter {
@@ -185,14 +185,14 @@
 .skills {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
   justify-items: center;
   background-color: #454545;
 }
 .skills img {
   grid-column: 2/3;
   grid-row: 2/5;
-  width: calc(10em + 27vw);
+  width: calc(12em + 27vw);
   justify-self: start;
 }
 .skills .p-skills {
@@ -200,15 +200,15 @@
   grid-column: 1/2;
   grid-row: 3/5;
   width: 60%;
-  font-size: calc(0.6em + 0.6vw);
+  font-size: calc(0.8em + 0.6vw);
 }
 .skills .interests {
   grid-column: 1/2;
-  grid-row: 4/5;
+  grid-row: 5/6;
   display: flex;
   flex-direction: column;
   gap: 15px;
-  font-size: calc(0.6em + 0.6vw);
+  font-size: calc(0.8em + 0.6vw);
   font-family: "Khmer";
   background-color: #21B1A7;
   border-radius: 10px;
@@ -219,13 +219,13 @@
   background-color: #4D4D4D;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(7, 1fr);
   justify-items: center;
 }
 .projects .swiper-projects {
   grid-column: 1/3;
   grid-row: 3/5;
-  margin-top: 2em;
+  margin-top: 6em;
   margin-bottom: 2em;
   max-width: 400px;
   overflow: visible;
@@ -267,7 +267,7 @@
 .contact {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
   justify-items: center;
   background-color: #454545;
 }
@@ -277,7 +277,7 @@
   width: 60%;
   height: 250px;
   margin-top: 2vw;
-  font-size: calc(0.6em + 0.6vw);
+  font-size: calc(0.8em + 0.6vw);
 }
 .contact img {
   grid-column: 2/3;
@@ -327,7 +327,7 @@
 }
 .contact form input,
 .contact form textarea {
-  font-size: calc(0.5em + 0.5vw);
+  font-size: calc(0.8em + 0.6vw);
   font-family: "Khmer";
   padding: 1em 1em 1em 1em;
   border-radius: 0.4em;
@@ -335,7 +335,7 @@
 }
 .contact form button {
   border: 0;
-  font-size: calc(0.5em + 0.6vw);
+  font-size: calc(0.6em + 0.6vw);
   color: white;
   font-family: "Khmer";
   background-color: #29D7CC;
@@ -347,11 +347,12 @@
 .contact .credits {
   grid-column: 1/2;
   grid-row: 5/6;
+  justify-self: center;
   display: flex;
   flex-direction: column;
   gap: 1em;
-  font-size: calc(0.5em + 0.5vw);
-  margin-left: -12%;
+  font-size: calc(0.6em + 0.5vw);
+  width: 60%;
 }
 .contact .credits span {
   border-radius: 0.5em;
@@ -412,7 +413,7 @@ header .nav.show {
   transform-origin: 4px 0px;
   border-radius: 0.5rem;
   width: calc(2em + 3vw);
-  height: 0.7vh;
+  height: calc(0.2em + 0.1vw);
   background-color: #FF2AC3;
 }
 .container-header .menu.close span {
@@ -469,7 +470,7 @@ main {
   flex-direction: column;
 }
 .title-section h1 {
-  font-size: calc(1em + 5vw);
+  font-size: calc(1.5em + 4vw);
 }
 .title-section .line {
   transform: translateX(-20em);
@@ -500,18 +501,25 @@ main {
 
 @media (max-width: 767px) {
   .home .b-h1 {
-    width: 70vw;
-    height: 60vh;
+    width: 76vw;
+    height: 55vh;
   }
   .container-header {
     gap: 60vw;
   }
+  .container-header .menu.close span:nth-child(2) {
+    transform: rotate(-35deg) translate(-5px, 8px);
+  }
   .swiper-pagination {
     left: 3%;
+    margin-top: 72vw;
   }
   .swiper-pagination .swiper-pagination-bullet {
-    width: 3vw;
+    width: 3.5vw;
     height: 2vh;
+  }
+  .about {
+    gap: 0.6em;
   }
   .about .p-about {
     grid-row: 4/6;
@@ -530,8 +538,8 @@ main {
   }
   .about .card-profile .b-img {
     justify-self: end;
-    left: 21%;
-    top: 17%;
+    left: 13%;
+    top: 15vw;
   }
   .about .card-profile .p-animation {
     display: none;
@@ -546,16 +554,17 @@ main {
   .skills img {
     grid-column: 1/3;
     grid-row: 4/5;
-    margin-top: 5vw;
+    margin-top: 12vw;
     justify-self: center;
   }
   .projects .swiper-projects {
     grid-column: 1/3;
-    grid-row: 3/4;
-    max-width: 150px;
+    grid-row: 4/6;
+    max-width: 200px;
+    margin-top: 0;
   }
   .projects .swiper-projects .swiper-slide {
-    min-height: 100px;
+    min-height: 200px;
   }
   .projects .swiper-projects .swiper-button-next,
 .projects .swiper-projects .swiper-button-prev {
@@ -565,13 +574,14 @@ main {
     grid-column: 1/3;
     grid-row: 3;
     width: 75%;
-    height: 0px;
+    height: 80px;
   }
   .contact img {
     display: none;
   }
   .contact form {
-    width: 80%;
+    width: 75%;
+    height: 90%;
     grid-column: 1/3;
     grid-row: 4/5;
     gap: 0.3em;
@@ -579,10 +589,8 @@ main {
   .contact form label {
     gap: 0.3em;
   }
-  .contact form input,
-.contact form textarea {
-    padding: 0.4em 0.4em 0.4em 0.4em;
-    border-radius: 0.4em;
+  .contact form input.name, .contact form input.email, .contact form input.subject {
+    height: 5vh;
   }
   .contact .credits {
     grid-column: 1/3;
