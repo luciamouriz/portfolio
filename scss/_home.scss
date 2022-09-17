@@ -14,13 +14,13 @@
     .arrow{
         position: absolute;
         width: calc(0.5em + 1vw);
-        margin-top: calc(13em + 25vw);
+        margin-top: 35em;
         animation: arrow 0.5s 2s infinite ease-out alternate;
     }
   
     h1{
         position: absolute;
-        font-size: calc(5em + 18vw);
+        font-size: 23vw;
         font-family: conf.fontFamily(colombo-bold);
         //text-shadow: 1vw 0.3rem 0px rgba(255, 42, 195, 0.70);
         z-index: 3;
@@ -36,14 +36,13 @@
 
     p{
         position: absolute;
-        margin-top: calc(8em + 8vw);
-        font-size: calc(0.8em + 1vw);
+        margin-top: 12em;
+        font-size: calc(0.9em + 1vw);
         font-family: conf.fontFamily(colombo-light);
         letter-spacing: 0.2vw;
     }
 
     .b-h1 {
-        
         width: 35vw;
         height: 90vh;
       }

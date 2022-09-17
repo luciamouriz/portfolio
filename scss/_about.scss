@@ -23,17 +23,18 @@
         grid-column: 2 / 3;
         grid-row: 3 / 5;       
         align-self: center;
+
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 1em;
 
         .saludo{
-           visibility: hidden;
+           display: none;
         }
 
         .p-animation{
-            visibility: visible;
+            display: inline;
             background-color: #B4B4B4;
             text-align: center;
             width: 70%;
@@ -73,10 +74,9 @@
 
         .b-img {
             position: absolute;
-            top: calc(2em + 0.1vw);
-            width: calc(9em + 30vw);
-            height: calc(10em + 33vw);
-            z-index: 0;
+            width: calc(6em + 28vw);
+            height: calc(7em + 28vw);
+            z-index: -1;
         }
 
         

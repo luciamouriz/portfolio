@@ -83,12 +83,31 @@ main {
     //Home
     .home{
         .b-h1 {
-        
-            width: 76vw;
-            height: 55vh;
+            width: 80vw;
+            height: 59vh;
           }
+
+        h1{font-size: 49vw;}
+        p{margin-top: 11em;}
+        .arrow{margin-top: 21em;}
     }
     //Header
+    header {
+        
+        .nav{    
+            gap: 0em;
+            font-size: 5vw;
+    
+            h1{
+                width: 55%;
+                height: 65px;
+                &:hover{
+                    border-bottom: 5px solid conf.$primary-color;
+                    
+                }
+            }
+        }
+    }
     .container-header{
         gap: 60vw; 
 
@@ -106,6 +125,7 @@ main {
 
         left: 3%;
         margin-top: 72vw; 
+
         .swiper-pagination-bullet {
         
             width: 3.5vw;
@@ -133,17 +153,12 @@ main {
             .rrss{
                 grid-column: 2;
                 gap: 0.4em;
-                justify-content: center;
 
            }
 
 
-           .b-img {
-                justify-self: end;
-                left: 13%;
-                top: 15vw;
-            }
-            .p-animation{display: none;}
+           .b-img {display: none;}
+            .p-animation{display: none; animation-iteration-count: 0;}
         }
         
     }
@@ -207,6 +222,10 @@ main {
             grid-row: 4 / 5;
             gap: 0.3em;
 
+            align-self:initial;
+            justify-self: initial;
+
+
             label {
                 gap: 0.3em;
             }
@@ -224,6 +243,7 @@ main {
             grid-row: 5 / 6;
             font-size: 0.6em;
             align-self: center;
+            width: 74%;
             span {width: 43vw; }
         }
     }

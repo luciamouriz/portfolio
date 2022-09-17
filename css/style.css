@@ -31,13 +31,13 @@
 .home .arrow {
   position: absolute;
   width: calc(0.5em + 1vw);
-  margin-top: calc(13em + 25vw);
+  margin-top: 35em;
   -webkit-animation: arrow 0.5s 2s infinite ease-out alternate;
           animation: arrow 0.5s 2s infinite ease-out alternate;
 }
 .home h1 {
   position: absolute;
-  font-size: calc(5em + 18vw);
+  font-size: 23vw;
   font-family: "Post No Bills Colombo Bold";
   z-index: 3;
 }
@@ -50,8 +50,8 @@
 }
 .home p {
   position: absolute;
-  margin-top: calc(8em + 8vw);
-  font-size: calc(0.8em + 1vw);
+  margin-top: 12em;
+  font-size: calc(0.9em + 1vw);
   font-family: "Post No Bills Colombo Light";
   letter-spacing: 0.2vw;
 }
@@ -122,10 +122,10 @@
   gap: 1em;
 }
 .about .card-profile .saludo {
-  visibility: hidden;
+  display: none;
 }
 .about .card-profile .p-animation {
-  visibility: visible;
+  display: inline;
   background-color: #B4B4B4;
   text-align: center;
   width: 70%;
@@ -160,10 +160,9 @@
 }
 .about .card-profile .b-img {
   position: absolute;
-  top: calc(2em + 0.1vw);
-  width: calc(9em + 30vw);
-  height: calc(10em + 33vw);
-  z-index: 0;
+  width: calc(6em + 28vw);
+  height: calc(7em + 28vw);
+  z-index: -1;
 }
 @-webkit-keyframes typewriter {
   from {
@@ -219,7 +218,7 @@
   background-color: #4D4D4D;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(7, 1fr);
+  grid-template-rows: repeat(9, 1fr);
   justify-items: center;
 }
 .projects .swiper-projects {
@@ -280,22 +279,21 @@
   font-size: calc(0.8em + 0.6vw);
 }
 .contact img {
-  grid-column: 2/3;
-  grid-row: 3/5;
-  left: 50%;
-  align-self: center;
   position: absolute;
-  width: calc(12em + 36vw);
-  height: calc(10em + 35vw);
-  z-index: 0;
+  top: 16%;
+  right: 4%;
+  width: 45vw;
+  height: 80vh;
+  z-index: -1;
 }
 .contact form {
-  width: 70%;
+  width: 65%;
+  height: 90%;
   grid-column: 2/3;
-  grid-row: 3/5;
+  grid-row: 3/6;
   display: flex;
   flex-direction: column;
-  gap: 0.7em;
+  gap: 0.8em;
   z-index: 4;
   align-self: center;
   justify-self: center;
@@ -306,18 +304,18 @@
   gap: 0.7em;
 }
 .contact form input::-moz-placeholder, .contact form textarea::-moz-placeholder {
-  font-size: calc(0.8em + 0.5vw);
+  font-size: calc(0.8em + 0.2vw);
   font-family: "Khmer";
   color: rgb(191, 191, 191);
 }
 .contact form input:-ms-input-placeholder, .contact form textarea:-ms-input-placeholder {
-  font-size: calc(0.8em + 0.5vw);
+  font-size: calc(0.8em + 0.2vw);
   font-family: "Khmer";
   color: rgb(191, 191, 191);
 }
 .contact form input::placeholder,
 .contact form textarea::placeholder {
-  font-size: calc(0.8em + 0.5vw);
+  font-size: calc(0.8em + 0.2vw);
   font-family: "Khmer";
   color: rgb(191, 191, 191);
 }
@@ -341,13 +339,12 @@
   background-color: #29D7CC;
   border-radius: 0.4em;
   width: 25%;
-  height: 5vh;
+  height: 6vh;
   cursor: pointer;
 }
 .contact .credits {
   grid-column: 1/2;
-  grid-row: 5/6;
-  justify-self: center;
+  grid-row: 6/7;
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -501,8 +498,28 @@ main {
 
 @media (max-width: 767px) {
   .home .b-h1 {
-    width: 76vw;
-    height: 55vh;
+    width: 80vw;
+    height: 59vh;
+  }
+  .home h1 {
+    font-size: 49vw;
+  }
+  .home p {
+    margin-top: 11em;
+  }
+  .home .arrow {
+    margin-top: 21em;
+  }
+  header .nav {
+    gap: 0em;
+    font-size: 5vw;
+  }
+  header .nav h1 {
+    width: 55%;
+    height: 65px;
+  }
+  header .nav h1:hover {
+    border-bottom: 5px solid #FF2AC3;
   }
   .container-header {
     gap: 60vw;
@@ -534,15 +551,14 @@ main {
   .about .card-profile .rrss {
     grid-column: 2;
     gap: 0.4em;
-    justify-content: center;
   }
   .about .card-profile .b-img {
-    justify-self: end;
-    left: 13%;
-    top: 15vw;
+    display: none;
   }
   .about .card-profile .p-animation {
     display: none;
+    -webkit-animation-iteration-count: 0;
+            animation-iteration-count: 0;
   }
   .skills .interests {
     display: none;
@@ -585,6 +601,8 @@ main {
     grid-column: 1/3;
     grid-row: 4/5;
     gap: 0.3em;
+    align-self: initial;
+    justify-self: initial;
   }
   .contact form label {
     gap: 0.3em;
@@ -597,6 +615,7 @@ main {
     grid-row: 5/6;
     font-size: 0.6em;
     align-self: center;
+    width: 74%;
   }
   .contact .credits span {
     width: 43vw;
