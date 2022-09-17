@@ -162,7 +162,7 @@
   position: absolute;
   width: calc(6em + 28vw);
   height: calc(7em + 28vw);
-  z-index: -1;
+  z-index: 0;
 }
 @-webkit-keyframes typewriter {
   from {
@@ -218,7 +218,7 @@
   background-color: #4D4D4D;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(9, 1fr);
+  grid-template-rows: repeat(6, 1fr);
   justify-items: center;
 }
 .projects .swiper-projects {
@@ -397,6 +397,7 @@ header .nav.show {
 .container-header .logo {
   width: calc(2em + 6vw);
   margin-left: 1.5rem;
+  cursor: pointer;
 }
 .container-header .menu {
   display: flex;
@@ -572,6 +573,9 @@ main {
     grid-row: 4/5;
     margin-top: 12vw;
     justify-self: center;
+  }
+  .projects {
+    grid-template-rows: repeat(9, 1fr);
   }
   .projects .swiper-projects {
     grid-column: 1/3;
