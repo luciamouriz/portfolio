@@ -5,6 +5,16 @@ $secundary-color:#454545;
 $secundary-light-color: #4D4D4D;
 $acento-color: #29D7CC;
 
+:root{
+    --primary-color:#FF2AC3;
+    --primary-dark-color: #ca1f9a;
+    --secondary-color:#454545;
+    --secondary-light-color: #4D4D4D;
+    --secondary-dark-color: #585858;
+    --acent-color:#29D7CC;
+    --white: #fff;
+
+}
 
 $font-family:(
     colombo: "Post No Bills Colombo",
@@ -16,7 +26,7 @@ $font-family:(
 );
 
 $font-size: (
-    font-body: calc(0.8em + 0.6vw),
+    font-body: 3.5vw,
 
 );
 
@@ -45,7 +55,7 @@ $font-size: (
 }
 
 @mixin mobile{
-    @media(max-width: 767px){
+    @media(max-width: 768px){ //cuando llega a 600px se quita 
         @content;
     }
 }

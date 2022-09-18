@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/stylesfonts.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
-    <title>Portfolio</title>
+    <title>LU | Portfolio</title>
 </head>
 <body>
     <header>
@@ -18,11 +18,9 @@
             <h1 data-index="3">HABILIDADES</h1>
             <h1 data-index="4">PROYECTOS</h1>
             <h1 data-index="5">CONTÁCTAME</h1>
-            
         </div>
         <div class="container-header">
-            <img id="logo" class="logo" src="./img/logo.png" alt="Logo Lucia"></a>
-
+            <img id="logo" class="logo" src="./img/logo.png" alt="Logo Lucia">
             <div class="menu">
                 <span></span>
                 <span></span>
@@ -69,9 +67,6 @@
                         </div>
                         <img class="b-img" src="./img/b-img.png"></img>  
                     </div>
-                    
-                   
-                
                 </div>
             </div>
             <div class="swiper-slide">
@@ -116,8 +111,6 @@
                     </div>
                     <!-- Add Pagination -->
                     <div class="swiper-pagination-projects"></div>
-                
-                    
                 </div>
             </div>
             <div class="swiper-slide">
@@ -129,25 +122,22 @@
                     <div class="p-contact">
                         <p>Contactame si quieres que forme parte de tu equipo, tengo disponibilidad completa.</p>
                     </div>
-                    <form>
+                    <form action="https://formspree.io/f/mlevjokq" method="POST">
                         <label>
-                            <input type="text" class="name" placeholder="Nombre">
-                            <input type="email" class="email" placeholder="Email">
+                            <input type="text" name="text" class="name" placeholder="Nombre">
+                            <input type="email" name="email" class="email" placeholder="Email">
                         </label>
-                        <input type="text" class="subject" placeholder="Asunto">
-                        <textarea class="message" placeholder="Mensaje" cols="60" rows="6"></textarea>
-                        <button>Enviar</button>
+                        <input type="text" name="subject" class="subject" placeholder="Asunto">
+                        <textarea name="message" class="message" placeholder="Mensaje" cols="60" rows="6"></textarea>
+                        <input type="submit" value="Enviar" class="submit">
                         <img class="b-contact" src="./img/b-form.png"></img>  
                     </form>
-                    
-                    
                     <div class="credits">
                         <span></span>
                         <div>
                             <p>Diseñado y programado por Lucia</p>
                             <p>Todos los derechos reservados &copy; 2022 Lucia Sanchez</p>
                         </div>
-                        
                     </div>
                     
                 </div>

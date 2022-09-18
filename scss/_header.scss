@@ -9,22 +9,21 @@ header {
         position: absolute;
         width: 100vw;
         height: 100vh;
-        background-color: conf.$secundary-color;
+        background-color: var(--secondary-color);
         z-index: 3;
 
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 1em;
-        font-size: 2vw;
+        font-size: 5vw;
         padding-left: 2em;
         cursor: pointer;
 
         h1{
-            width: 25%;
-            height: 85px;
+            width: 55%;
+            height: 65px;
             &:hover{
-                border-bottom: 10px solid conf.$primary-color;
+                border-bottom: 5px solid var(--primary-color);
                 
             }
         }
@@ -39,11 +38,11 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 80vw; 
+    gap: 55vw; 
 
     .logo{
-        width: calc(2em + 6vw);
-        margin-left: 1.5rem;
+        width: calc(3em + 6vw);
+        margin-left: 1em;
         cursor: pointer;
     }
     
@@ -61,17 +60,17 @@ header {
             border-radius: 0.5rem;
             width: calc(2em + 3vw);
             height: calc(0.2em + 0.1vw);
-            background-color: conf.$primary-color;
+            background-color: var(--primary-color);
         }
         
         &.close span {
             opacity: 1;
             transform: rotate(35deg) translate(0px, 0px);
-            background: conf.$acento-color;
+            background: var(--acent-color);
         }
         
         &.close span:nth-child(2){
-            transform: rotate(-35deg) translate(-12px, 11px);
+            transform: rotate(-35deg) translate(-5px, 8px);
         }
         
         &.close span:nth-child(3){

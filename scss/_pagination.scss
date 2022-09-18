@@ -3,13 +3,13 @@
 .swiper-pagination{
 
     width: 3%;
-    left: 1%; 
-    margin-top: 19vw; 
+    left: 3%; 
+    margin-top: 14em; 
     
     .swiper-pagination-bullet {
         
-        width: 1.5vw;
-        height: 3vh;
+        width: 3.5vw;
+        height: 2vh;
         border-radius: 100%;
         text-align: center;
         line-height: 30px;
@@ -21,7 +21,7 @@
         display: none;
     }
     .swiper-pagination-bullet-active {
-        background: conf.$primary-color;
+        background: var(--primary-color);
     }
 
 }

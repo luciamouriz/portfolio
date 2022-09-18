@@ -18,17 +18,17 @@ let swiper = new Swiper('.swiper-container', {
 document.querySelector(".nav").querySelectorAll("h1").forEach(item => {
   item.addEventListener("click", () => {
     let atr = item.getAttribute("data-index")
-    if(atr == 1) swiper.slideTo(1)
-    if(atr == 2) swiper.slideTo(2)
-    if(atr == 3) swiper.slideTo(3)
-    if(atr == 4) swiper.slideTo(4)
-    if(atr == 5) swiper.slideTo(5)
+    if(atr == 1) swiper.slideTo(0)
+    if(atr == 2) swiper.slideTo(1)
+    if(atr == 3) swiper.slideTo(2)
+    if(atr == 4) swiper.slideTo(3)
+    if(atr == 5) swiper.slideTo(4)
     
   }
   
 )});
 
-document.getElementById("logo").addEventListener("click", () => {swiper.slideTo(1)})
+document.getElementById("logo").addEventListener("click", () => {swiper.slideTo(0)})
 
 let swiper2 = new Swiper('.swiper-projects', {
     slidesPerView: 1,

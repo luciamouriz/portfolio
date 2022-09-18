@@ -3,18 +3,14 @@
 .contact {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: 15% repeat(6, 1fr);
     justify-items: center;
-    background-color: conf.$secundary-color;
+    background-color: var(--secondary-color);
     
-
-
     .p-contact {
-        grid-column: 1 / 2;
-        grid-row: 3 / 5;
-        width: 60%;
-        height: 250px;
-        margin-top: 2vw;
+        grid-column: 1 / 3;
+        grid-row: 3;
+        width: 75%;
         font-size: conf.fontSize(font-body);
     }
 
@@ -26,37 +22,47 @@
         height: 80vh;
         z-index: -1;
     }
-
+    img{
+        display: none;
+    }
 
     form {
-        width: 65%;
-        height: 90%;
-        grid-column: 2 / 3;
-        grid-row: 3 / 6;
+        width: 75%;
+        grid-column: 1 / 3;
+        grid-row: 4 / 5;
+
         display: flex;
         flex-direction: column;
-        gap: 0.8em;
+        gap: 0.3em;
         z-index: 4;
-        align-self: center;
-        justify-self: center;
 
         label {
             display: flex;
             flex-direction: row;
-            gap: 0.7em;
+            gap: 0.3em;
         }
 
         input::placeholder,
         textarea::placeholder {
-            font-size: calc(0.8em + 0.2vw);
+            font-size: calc(0.9em + 0.2vw);
             font-family: conf.fontFamily(khmer);
             color:rgb(191, 191, 191);
         }
 
-        input.name, input.email,  input.subject{
+        input.subject{
             width: 100%;
-            height: 7vh;
+            height: 5vh;
 
+        }
+
+        input.email{
+            width: 100%;
+            height: 5vh;
+        }
+        
+        input.name{
+            width: 45%;
+            height: 5vh;
         }
 
         input,
@@ -65,38 +71,38 @@
             font-family: conf.fontFamily(khmer);
             padding: 1em 1em 1em 1em;
             border-radius: 0.4em;
-            border: 1.5px solid conf.$acento-color;
+            border: 1.5px solid var(--acent-color);
         }
 
-        button {
+        .submit {
             border: 0;
             font-size: calc(0.6em + 0.6vw);
-            color: white;
+            color: var(--white);
             font-family: conf.fontFamily(khmer);
-            background-color: conf.$acento-color;
+            background-color: var(--acent-color);
             border-radius: 0.4em;
             width: 25%;
-            height: 6vh;
+            height: 7vh;
             cursor: pointer;
         }
     }
 
 
     .credits {
-        grid-column: 1 / 2;
-        grid-row: 6 / 7;
+        grid-column: 1 / 3;
+        grid-row: 6;
         display: flex;
         flex-direction: column;
         gap: 1em;
-        font-size: calc(0.6em + 0.5vw);
-      
-        width: 60%;
+        font-size: 0.6em;
+        align-self: center;
+        width: 74%;
 
         span {
             border-radius: 0.5em;
-            width: 23vw;
+            width: 43vw;
             height: 0.5vh;
-            background-color: conf.$acento-color;
+            background-color: var(--acent-color);
         }
     }
 }

@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+    color:var(--white);
     background-color: conf.$secundary-color;
     text-align: center;
 
@@ -14,37 +14,36 @@
     .arrow{
         position: absolute;
         width: calc(0.5em + 1vw);
-        margin-top: 35em;
+        margin-top: 21em;
         animation: arrow 0.5s 2s infinite ease-out alternate;
     }
   
     h1{
         position: absolute;
-        font-size: 23vw;
+        font-size: 49vw;
         font-family: conf.fontFamily(colombo-bold);
-        //text-shadow: 1vw 0.3rem 0px rgba(255, 42, 195, 0.70);
         z-index: 3;
     }
 
     .h1-2{
         margin-left: 0.1em;
         margin-top: 10px;
-        color: conf.$primary-color;
+        color: var(--primary-color);
         animation: neon 4s ease infinite;
     } 
 
 
     p{
         position: absolute;
-        margin-top: 12em;
+        margin-top: 11em;
         font-size: calc(0.9em + 1vw);
         font-family: conf.fontFamily(colombo-light);
         letter-spacing: 0.2vw;
     }
 
     .b-h1 {
-        width: 35vw;
-        height: 90vh;
+        width: 80vw;
+        height: 59vh;
       }
 
     
@@ -53,13 +52,14 @@
         0%,
         100% {
           text-shadow: 0 0 1vw;
-          color:rgb(88, 88, 88);
+          color: var(--secondary-dark-color);
         }
         50% {
           text-shadow: 0 0 .5vw ;
-          color: #ca1f9a;
+          color: var(--primary-dark-color);
         }
       } 
+
 
       @keyframes arrow {
         from {
