@@ -1,0 +1,205 @@
+:root {
+  --primary-color:#FF2AC3;
+  --primary-dark-color: #ca1f9a;
+  --secondary-color:#454545;
+  --secondary-light-color: #4D4D4D;
+  --secondary-dark-color: #585858;
+  --acent-color:#29D7CC;
+  --white: #fff;
+}
+
+.home .arrow {
+  margin-top: 30em;
+}
+.home h1 {
+  font-size: 30vw;
+}
+.home p {
+  margin-top: 12em;
+}
+.home .b-h1 {
+  width: 46vw;
+  height: 90vh;
+}
+
+header .nav {
+  gap: 1em;
+  font-size: 2vw;
+}
+header .nav h1 {
+  width: 25%;
+  height: 85px;
+}
+header .nav h1:hover {
+  border-bottom: 10px solid #FF2AC3;
+}
+
+.container-header {
+  gap: 73vw;
+}
+.container-header .logo {
+  margin-left: 1.5em;
+}
+.container-header .menu.close span:nth-child(2) {
+  transform: rotate(-35deg) translate(-12px, 11px);
+}
+
+.swiper-pagination {
+  left: 2%;
+  margin-top: 28vw;
+}
+.swiper-pagination .swiper-pagination-bullet {
+  width: 2.3vw;
+  height: 3vh;
+}
+
+.about {
+  grid-template-rows: 150px repeat(6, 1fr);
+}
+.about .p-about {
+  grid-column: 1/2;
+  grid-row: 3/5;
+  justify-self: end;
+}
+.about .card-profile {
+  grid-column: 2/3;
+  grid-row: 2/5;
+}
+.about .card-profile .p-animation {
+  display: inline;
+  background-color: #B4B4B4;
+  text-align: center;
+  width: 70%;
+  padding: 0.4em;
+  border-radius: 0.5em;
+  font-size: calc(0.7em + 1vw);
+  color: var(--primary-color);
+  z-index: 5;
+  margin-right: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: typewriter 1s steps(50) 1 normal both;
+          animation: typewriter 1s steps(50) 1 normal both;
+}
+.about .card-profile .b-img {
+  position: absolute;
+  display: block;
+  width: calc(6em + 28vw);
+  height: calc(7em + 28vw);
+  z-index: 0;
+}
+@-webkit-keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 75%;
+  }
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 75%;
+  }
+}
+
+.skills {
+  grid-template-rows: 150px repeat(6, 1fr);
+}
+.skills img {
+  grid-column: 2/3;
+  grid-row: 2/6;
+  align-self: center;
+  margin: 0;
+}
+.skills .p-skills {
+  grid-column: 1/2;
+  width: 70%;
+  margin-left: 3.6em;
+  align-self: center;
+}
+.skills .interests {
+  display: block;
+  grid-column: 1/2;
+  grid-row: 5/6;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 1.3vw;
+  font-family: "Noto Sans Khmer";
+  background-color: #21B1A7;
+  border-radius: 10px;
+  padding: 3% 26% 3% 8%;
+  margin-left: 3.6em;
+}
+.skills .interests .p-interests {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+}
+
+.projects {
+  grid-template-rows: 150px repeat(6, 1fr);
+}
+.projects .swiper-projects {
+  grid-row: 3/5;
+  margin-top: 6em;
+  max-width: 350px;
+}
+.projects .swiper-projects .swiper-slide {
+  min-height: 200px;
+}
+
+.contact {
+  grid-template-rows: 150px repeat(6, 1fr);
+}
+.contact .p-contact {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  width: 80%;
+  justify-self: flex-end;
+  margin-top: 2vw;
+}
+.contact img {
+  display: block;
+  position: absolute;
+  top: 23%;
+  right: 1%;
+  width: 57vw;
+  height: 68vh;
+  z-index: -1;
+}
+.contact form {
+  width: 75%;
+  grid-column: 2/3;
+  grid-row: 3/7;
+  gap: 0.8em;
+  z-index: 4;
+}
+.contact form label {
+  gap: 0.7em;
+}
+.contact form input.subject {
+  height: 7vh;
+}
+.contact form input.email {
+  height: 7vh;
+}
+.contact form input.name {
+  height: 7vh;
+}
+.contact form .submit {
+  height: 8vh;
+}
+.contact .credits {
+  grid-column: 1/2;
+  grid-row: 6/span 7;
+  justify-self: flex-end;
+  width: 80%;
+}
+.contact .credits span {
+  width: 23vw;
+}
