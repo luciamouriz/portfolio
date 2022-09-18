@@ -3,7 +3,7 @@
 .contact {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 15% repeat(6, 1fr);
+    grid-template-rows: 90px repeat(6, 1fr);
     justify-items: center;
     background-color: var(--secondary-color);
     
@@ -14,14 +14,6 @@
         font-size: conf.fontSize(font-body);
     }
 
-    img{
-        position: absolute;
-        top: 16%;
-        right: 4%;
-        width: 45vw;
-        height: 80vh;
-        z-index: -1;
-    }
     img{
         display: none;
     }
@@ -94,7 +86,7 @@
         display: flex;
         flex-direction: column;
         gap: 1em;
-        font-size: 0.6em;
+        font-size: calc(0.5em + 0.5vw);
         align-self: center;
         width: 74%;
 

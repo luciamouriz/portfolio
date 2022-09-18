@@ -1,0 +1,257 @@
+@use "config" as conf;
+
+
+//HOME
+.home {
+        
+    .arrow{ margin-top: 35em; }
+    h1{ font-size: 25vw; }
+    p{ margin-top: 12em; }
+    .b-h1 {
+        width: 38vw;
+        height: 90vh;
+    }
+}
+
+//HEADER
+header {
+    .nav{
+        gap: 1em;
+        font-size: 2vw;
+
+        h1{
+            width: 25%;
+            height: 85px;
+            &:hover{
+                border-bottom: 10px solid conf.$primary-color;
+                
+            }
+        }
+    }
+}
+.container-header{
+    gap: 80vw;
+
+    .logo{
+        margin-left: 1.5em;
+    }
+    .menu{
+        
+        
+        &.close span:nth-child(2){
+            transform: rotate(-35deg) translate(-12px, 11px);
+        }
+        
+    }
+}
+
+//PAGINATION
+.swiper-pagination{
+    width: 3%;
+    left: 1%; 
+    margin-top: 19vw; 
+    
+    .swiper-pagination-bullet {
+        width: 1.5vw;
+        height: 3vh;
+    }
+}
+
+//ABOUT
+.about{
+
+    grid-template-rows: 150px repeat(6,1fr);
+
+    .p-about{
+        grid-column: 1 / 2;
+        grid-row: 3 / 5;
+        justify-self: end;
+    }
+
+    .card-profile{
+        grid-column: 2 / 3;
+        grid-row: 2 / 5; 
+
+        .p-animation{
+            display: inline;
+            background-color: #B4B4B4;
+            text-align: center;
+            width: 70%;
+            padding: 0.4em;
+            border-radius: 0.5em;
+            font-size: calc(0.7em + 1vw);
+            color: var(--primary-color);
+            z-index: 5;
+            margin-right: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typewriter 1s steps(50) 1 normal both;
+        }
+
+
+        .b-img {
+            position: absolute;
+            display: block;
+            width: calc(6em + 28vw);
+            height: calc(7em + 28vw);
+            z-index: 0;
+        }
+
+        @keyframes typewriter {
+            from {
+              width: 0;
+            }
+            
+            to {
+              width: 75%;
+            }
+          }
+        
+    }
+}
+
+//SKILLS
+.skills {
+    grid-template-rows: 150px repeat(6,1fr);
+
+    img{
+        grid-column: 2 / 3;
+        grid-row: 2 / 6;
+        align-self: center;
+        margin: 0;
+    }
+
+    .p-skills{
+        grid-column: 1 / 2;
+        width: 70%;
+        margin-left: 3.6em;
+        align-self: center;
+    }
+
+    .interests{
+        display: block;
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+        margin-top: 1em;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        font-size: 1.3vw;
+        font-family: conf.fontFamily(khmer);
+        background-color: #21B1A7;
+        border-radius: 10px;
+        padding: 3% 22% 3% 4%;
+        .p-interests{
+            display: flex;
+            flex-direction: column;
+            gap: 0.4em;
+        }
+        
+    }
+
+}
+
+
+//PROJECTS
+.projects {
+    grid-template-rows: 150px repeat(6,1fr);
+
+    .swiper-projects {
+        grid-row: 3 / 5;
+        margin-top: 6em;
+        max-width: 350px;
+
+        .swiper-slide {
+            min-height: 200px;
+            
+          }
+         
+        /* ARROWS */
+        .swiper-button-next, 
+        .swiper-button-prev{
+            display: inline-block;
+            border-radius: 0.5em;
+            background-color: var(--acent-color);
+            color: var(--white);
+            top: 60%;
+        }
+        
+        .swiper-button-prev{
+            left: 6%;
+            padding: 50px 40px 90px 20px;
+        }
+        .swiper-button-next {
+            left: 90%;
+            padding: 50px 40px 90px 20px;
+        }
+        
+          
+      }
+    
+}
+
+//CONTACT
+.contact {
+    grid-template-rows: 150px repeat(6,1fr);
+
+    .p-contact {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        width: 60%;
+    }
+
+    img{
+        display: block;
+        position: absolute;
+        top: 16%;
+        right: 3.5%;
+        width: 43vw;
+        height: 85vh;
+        z-index: -1;
+    }
+
+
+    form {
+        width: 65%;
+        grid-column: 2 / 3;
+        grid-row: 3 / 7;
+
+        gap: 0.8em;
+        z-index: 4;
+
+        label {
+            gap: 0.7em;
+        }
+
+
+        input.subject{
+            height: 7vh;
+
+        }
+
+        input.email{
+            height: 7vh;
+        }
+
+        input.name{
+            height: 7vh;
+        }
+
+        .submit {
+            height: 8vh;
+        }
+        
+    }
+
+
+    .credits {
+        grid-column: 1 / 2;
+        grid-row: 6 / span 7;
+
+        width: 60%;
+        span {
+            
+            width: 23vw;
+        }
+    }
+}

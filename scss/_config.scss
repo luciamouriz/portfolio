@@ -20,13 +20,13 @@ $font-family:(
     colombo: "Post No Bills Colombo",
     colombo-light: "Post No Bills Colombo Light",
     colombo-bold: "Post No Bills Colombo Bold",
-    khmer: "Khmer",
-    khmer-light: "Khmer Light",
-    khmer-semibold: "Khmer semiBold",
+    khmer: "Noto Sans Khmer",
+    khmer-light: "Noto Sans Khmer Light",
+    khmer-semibold: "Noto Sans Khmer Semibold",
 );
 
 $font-size: (
-    font-body: 3.5vw,
+    font-body: calc(0.6em + 0.7vw),
 
 );
 
