@@ -11,6 +11,7 @@
 header {
   position: fixed;
   z-index: 2;
+  width: 100%;
 }
 header .nav {
   visibility: hidden;
@@ -24,14 +25,17 @@ header .nav {
   justify-content: center;
   font-size: 5vw;
   padding-left: 2em;
+  gap: calc(1em + 2vw);
   cursor: pointer;
 }
 header .nav h1 {
-  width: 55%;
-  height: 65px;
+  width: 67%;
 }
 header .nav h1:hover {
   border-bottom: 5px solid var(--primary-color);
+}
+header .nav h1:active {
+  color: var(--primary-dark-color);
 }
 header .nav.show {
   visibility: visible;
@@ -41,7 +45,7 @@ header .nav.show {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 55vw;
+  justify-content: space-between;
 }
 .container-header .logo {
   width: calc(3em + 6vw);
@@ -53,12 +57,13 @@ header .nav.show {
   flex-direction: column;
   gap: calc(0.3em + 0.8vw);
   cursor: pointer;
+  margin-right: 1em;
   z-index: 4;
 }
 .container-header .menu span {
   transition: all 0.2s linear;
   transform-origin: 4px 0px;
-  border-radius: 0.5rem;
+  border-radius: 0.5em;
   width: calc(2em + 3vw);
   height: calc(0.2em + 0.1vw);
   background-color: var(--primary-color);
@@ -87,13 +92,13 @@ header .nav.show {
 .home .arrow {
   position: absolute;
   width: calc(0.5em + 1vw);
-  margin-top: 21em;
+  margin-top: calc(5em + 77vw);
   -webkit-animation: arrow 0.5s 2s infinite ease-out alternate;
           animation: arrow 0.5s 2s infinite ease-out alternate;
 }
 .home h1 {
   position: absolute;
-  font-size: 49vw;
+  font-size: calc(0.2em + 48vw);
   font-family: "Post No Bills Colombo Bold";
   z-index: 3;
 }
@@ -106,14 +111,14 @@ header .nav.show {
 }
 .home p {
   position: absolute;
-  margin-top: 11em;
-  font-size: calc(0.9em + 1vw);
+  margin-top: 55vw;
+  font-size: calc(0.8em + 2vw);
   font-family: "Post No Bills Colombo Light";
   letter-spacing: 0.2vw;
 }
 .home .b-h1 {
-  width: 80vw;
-  height: 59vh;
+  width: calc(1em + 70vw);
+  height: calc(4em + 80vw);
 }
 @-webkit-keyframes neon {
   0%, 100% {
@@ -154,22 +159,18 @@ header .nav.show {
 
 .about {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 45px 1fr 45px;
   grid-template-rows: 90px repeat(6, 1fr);
   justify-items: center;
   background-color: var(--secondary-light-color);
 }
 .about .p-about {
-  grid-row: 4/6;
-  grid-column: 1/3;
-  width: 80%;
+  grid-row: 5/6;
+  grid-column: 2/3;
   font-size: calc(0.6em + 0.7vw);
-  justify-self: center;
-  margin-top: 3vw;
-  height: 200px;
 }
 .about .card-profile {
-  grid-column: 1/3;
+  grid-column: 2/3;
   grid-row: 3/4;
   align-self: center;
   display: flex;
@@ -210,22 +211,19 @@ header .nav.show {
 
 .skills {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 45px 1fr 45px;
   grid-template-rows: 90px repeat(6, 1fr);
-  justify-items: center;
   background-color: var(--secondary-color);
+  justify-items: center;
 }
 .skills img {
-  grid-column: 1/3;
-  grid-row: 4/5;
-  width: 80%;
-  justify-self: center;
-  margin-top: 3em;
+  grid-column: 2;
+  grid-row: 4/span 5;
+  width: calc(0.5em + 70vw);
 }
 .skills .p-skills {
-  grid-column: 1/3;
+  grid-column: 2;
   grid-row: 3/5;
-  width: 76%;
   font-size: calc(0.6em + 0.7vw);
 }
 .skills .interests {
@@ -234,15 +232,15 @@ header .nav.show {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 45px 1fr 45px;
   grid-template-rows: 90px repeat(9, 1fr);
   justify-items: center;
   background-color: var(--secondary-light-color);
 }
 .projects .swiper-projects {
-  grid-column: 1/3;
+  grid-column: 2/3;
   grid-row: 4/6;
-  max-width: 200px;
+  max-width: calc(2em + 50vw);
   overflow: visible;
 }
 .projects .swiper-projects .swiper-slide {
@@ -268,24 +266,22 @@ header .nav.show {
 
 .contact {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 45px repeat(2, 1fr);
   grid-template-rows: 90px repeat(6, 1fr);
-  justify-items: center;
   background-color: var(--secondary-color);
 }
 .contact .p-contact {
-  grid-column: 1/3;
-  grid-row: 3;
-  width: 75%;
+  grid-column: 2/3;
+  grid-row: 3/4;
   font-size: calc(0.6em + 0.7vw);
 }
 .contact img {
   display: none;
 }
 .contact form {
-  width: 75%;
-  grid-column: 1/3;
+  grid-column: 2;
   grid-row: 4/5;
+  width: 75vw;
   display: flex;
   flex-direction: column;
   gap: 0.3em;
@@ -344,14 +340,14 @@ header .nav.show {
   cursor: pointer;
 }
 .contact .credits {
-  grid-column: 1/3;
+  grid-column: 2;
   grid-row: 6;
   display: flex;
   flex-direction: column;
   gap: 1em;
   font-size: calc(0.5em + 0.5vw);
   align-self: center;
-  width: 74%;
+  width: 75vw;
 }
 .contact .credits span {
   border-radius: 0.5em;
@@ -363,10 +359,10 @@ header .nav.show {
 .swiper-pagination {
   width: 3%;
   left: 3%;
-  margin-top: 65vw;
+  margin-top: calc(4em + 40vw);
 }
 .swiper-pagination .swiper-pagination-bullet {
-  width: 3.5vw;
+  width: calc(0.5em + 1vw);
   height: 2vh;
   border-radius: 100%;
   text-align: center;
@@ -415,20 +411,22 @@ main {
 }
 
 .title-section {
-  grid-column: 1/2;
+  grid-column: 2;
   grid-row: 2/3;
   align-self: center;
+  justify-self: start;
   margin-bottom: 1em;
-  width: 60%;
+  width: calc(0.5em + 70vw);
   display: flex;
   flex-direction: column;
 }
 .title-section h1 {
-  font-size: calc(1.5em + 4vw);
+  font-size: calc(1.5em + 3vw);
+  letter-spacing: 0.035em;
 }
 .title-section .line {
   transform: translateX(-20em);
-  background-color: #FF2AC3;
+  background-color: var(--primary-color);
   height: calc(0.2em + 0.2vw);
   width: calc(2em + 8vw);
 }

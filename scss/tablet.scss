@@ -1,7 +1,7 @@
 @use "config" as conf;
 
 
-//HOME
+/* //HOME
 .home {
         
     .arrow{ margin-top: 30em; }
@@ -23,7 +23,7 @@ header {
             width: 25%;
             height: 85px;
             &:hover{
-                border-bottom: 10px solid conf.$primary-color;
+                border-bottom: 10px solid var(--primary-color);;
                 
             }
         }
@@ -111,10 +111,12 @@ header {
 
 //SKILLS
 .skills {
-    grid-template-rows: 150px repeat(6,1fr);
+
+    grid-template-rows: 150px 100px 100px 170px repeat(2,1fr);
+    grid-template-columns: 1fr 50px 1fr;
 
     img{
-        grid-column: 2 / 3;
+        grid-column: 3 / 4;
         grid-row: 2 / 6;
         align-self: center;
         margin: 0;
@@ -122,16 +124,17 @@ header {
 
     .p-skills{
         grid-column: 1 / 2;
+        grid-row: 3 / 4;
         width: 70%;
         margin-left: 3.6em;
-        align-self: center;
+        align-self: end;
     }
 
     .interests{
         display: block;
         grid-column: 1 / 2;
-        grid-row: 5 / 6;
-        margin-top: 1em;
+        grid-row: 4 / 5;
+        margin-top: 2em;
         display: flex;
         flex-direction: column;
         gap: 15px;
@@ -139,8 +142,9 @@ header {
         font-family: conf.fontFamily(khmer);
         background-color: #21B1A7;
         border-radius: 10px;
-        padding: 3% 26% 3% 8%;
         margin-left: 3.6em;
+        width: 70%;
+        padding: 1em 1em 1em 1em;
         .p-interests{
             display: flex;
             flex-direction: column;
@@ -236,4 +240,4 @@ header {
             width: 23vw;
         }
     }
-}
+} */

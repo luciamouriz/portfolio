@@ -4,11 +4,11 @@
 
     width: 3%;
     left: 3%;  
-    margin-top: 65vw;
+    margin-top: calc(4em + 40vw);
 
     .swiper-pagination-bullet {
         
-        width: 3.5vw;
+        width: calc(0.5em + 1vw);
         height: 2vh;
         border-radius: 100%;
         text-align: center;

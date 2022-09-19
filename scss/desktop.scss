@@ -6,7 +6,7 @@
         
     .arrow{ margin-top: 35em; }
     h1{ font-size: 25vw; }
-    p{ margin-top: 12em; }
+    p{ font-size: 2vw; margin-top: 12em; }
     .b-h1 {
         width: 38vw;
         height: 90vh;
@@ -23,21 +23,15 @@ header {
             width: 25%;
             height: 85px;
             &:hover{
-                border-bottom: 10px solid conf.$primary-color;
+                border-bottom: 10px solid var(--primary-color);
                 
             }
         }
     }
 }
 .container-header{
-    gap: 80vw;
-
-    .logo{
-        margin-left: 1.5em;
-    }
     .menu{
-        
-        
+        margin-right: 3em;
         &.close span:nth-child(2){
             transform: rotate(-35deg) translate(-12px, 11px);
         }
@@ -57,20 +51,29 @@ header {
     }
 }
 
+.title-section{
+    margin-bottom: 2em;
+    width: calc(0.5em + 40vw);
+
+}
+
 //ABOUT
 .about{
-
+    
+    grid-template-columns: 150px repeat(2,1fr) 200px;
     grid-template-rows: 150px repeat(6,1fr);
+    justify-items: start;
 
     .p-about{
-        grid-column: 1 / 2;
+        grid-column: 2 / 3;
         grid-row: 3 / 5;
-        justify-self: end;
+        width: 90%;
     }
 
-    .card-profile{
-        grid-column: 2 / 3;
-        grid-row: 2 / 5; 
+     .card-profile{
+        grid-column: 3 / 4;
+        grid-row: 3 / 5; 
+        justify-self: center;
 
         .p-animation{
             display: inline;
@@ -107,30 +110,31 @@ header {
             }
           }
         
-    }
+    } 
 }
 
 //SKILLS
 .skills {
+    grid-template-columns: 150px repeat(2,1fr) 150px;
     grid-template-rows: 150px repeat(6,1fr);
+    justify-items: start;
 
     img{
-        grid-column: 2 / 3;
+        grid-column: 3 / 4;
         grid-row: 2 / 6;
+        width: 84%;
         align-self: center;
         margin: 0;
     }
 
     .p-skills{
-        grid-column: 1 / 2;
-        width: 70%;
-        margin-left: 3.6em;
-        align-self: center;
+        grid-column: 2 / 3;
+        width: 80%;
     }
 
     .interests{
         display: block;
-        grid-column: 1 / 2;
+        grid-column: 2 / 3;
         grid-row: 5 / 6;
         margin-top: 1em;
         display: flex;
@@ -154,9 +158,11 @@ header {
 
 //PROJECTS
 .projects {
+    grid-template-columns: 150px repeat(2,1fr) 150px;
     grid-template-rows: 150px repeat(6,1fr);
 
     .swiper-projects {
+        grid-column: 2 / 4;
         grid-row: 3 / 5;
         margin-top: 6em;
         max-width: 350px;
@@ -192,28 +198,28 @@ header {
 
 //CONTACT
 .contact {
+    grid-template-columns: 150px repeat(2,1fr) 150px;
     grid-template-rows: 150px repeat(6,1fr);
 
     .p-contact {
-        grid-column: 1 / 2;
         grid-row: 3 / 4;
-        width: 60%;
+        width: 70%;
     }
 
     img{
         display: block;
         position: absolute;
         top: 16%;
-        right: 3.5%;
-        width: 43vw;
+        right: 10%;
+        width: 45vw;
         height: 85vh;
         z-index: -1;
     }
 
 
     form {
-        width: 65%;
-        grid-column: 2 / 3;
+        width: 70%;
+        grid-column: 3 / 4;
         grid-row: 3 / 7;
 
         gap: 0.8em;
@@ -245,12 +251,11 @@ header {
 
 
     .credits {
-        grid-column: 1 / 2;
+        grid-column: 2 / 3;
         grid-row: 6 / span 7;
 
-        width: 60%;
+        width: 70%;
         span {
-            
             width: 23vw;
         }
     }

@@ -2,15 +2,13 @@
 
 .contact {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 45px repeat(2,1fr);
     grid-template-rows: 90px repeat(6, 1fr);
-    justify-items: center;
     background-color: var(--secondary-color);
-    
+
     .p-contact {
-        grid-column: 1 / 3;
-        grid-row: 3;
-        width: 75%;
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
         font-size: conf.fontSize(font-body);
     }
 
@@ -19,10 +17,10 @@
     }
 
     form {
-        width: 75%;
-        grid-column: 1 / 3;
+      
+        grid-column: 2;
         grid-row: 4 / 5;
-
+        width: 75vw;
         display: flex;
         flex-direction: column;
         gap: 0.3em;
@@ -81,14 +79,14 @@
 
 
     .credits {
-        grid-column: 1 / 3;
+        grid-column: 2;
         grid-row: 6;
         display: flex;
         flex-direction: column;
         gap: 1em;
         font-size: calc(0.5em + 0.5vw);
         align-self: center;
-        width: 74%;
+        width: 75vw;
 
         span {
             border-radius: 0.5em;

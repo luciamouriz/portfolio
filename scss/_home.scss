@@ -9,18 +9,17 @@
     color:var(--white);
     background-color: var(--secondary-color);
     text-align: center;
-
     
     .arrow{
         position: absolute;
         width: calc(0.5em + 1vw);
-        margin-top: 21em;
+        margin-top: calc(5em + 77vw);
         animation: arrow 0.5s 2s infinite ease-out alternate;
     }
   
     h1{
         position: absolute;
-        font-size: 49vw;
+        font-size: calc(0.2em + 48vw);
         font-family: conf.fontFamily(colombo-bold);
         z-index: 3;
     }
@@ -35,15 +34,15 @@
 
     p{
         position: absolute;
-        margin-top: 11em;
-        font-size: calc(0.9em + 1vw);
+        margin-top: 55vw;
+        font-size: calc(0.8em + 2vw);
         font-family: conf.fontFamily(colombo-light);
         letter-spacing: 0.2vw;
     }
 
     .b-h1 {
-        width: 80vw;
-        height: 59vh;
+        width: calc(1em + 70vw);
+        height: calc(4em + 80vw);
       }
 
     
