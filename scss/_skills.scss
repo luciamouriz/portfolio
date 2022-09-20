@@ -3,7 +3,7 @@
 .skills {
     display: grid;
     grid-template-columns: 45px 1fr 45px;
-    grid-template-rows: 90px repeat(6, 1fr);
+    grid-template-rows: 90px repeat(7, 1fr);
     background-color: var(--secondary-color);
     justify-items: center;
 
@@ -11,7 +11,7 @@
         grid-column: 2 / 3;
         grid-row: 4 / 6;
         justify-self: stretch;
-        align-self: center;
+        align-self: flex-start;
         width: 100%;
     }
 
