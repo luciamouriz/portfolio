@@ -11,13 +11,12 @@ html,
 body {
     height: 100%;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 body {
 
-    color: white;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    color: var(--white);
     font-family: conf.fontFamily(khmer-light);
 
 }

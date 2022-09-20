@@ -12,10 +12,6 @@
         font-size: conf.fontSize(font-body);
     }
 
-    img {
-        display: none;
-    }
-
     form {
 
         grid-column: 2 / 3;
@@ -76,6 +72,10 @@
             padding: 0.7rem 0.7rem;
 
             cursor: pointer;
+        }
+
+        img {
+            display: none;
         }
     }
 

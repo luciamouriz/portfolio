@@ -56,11 +56,9 @@ header {
 .swiper-pagination {
     width: 3%;
     left: 1%;
-    margin-top: 19vw;
-
+    padding-top: calc(1em + 34vw);
     .swiper-pagination-bullet {
-        width: 1.5vw;
-        height: 3vh;
+        padding: calc(0.4em + 0.4vw);
     }
 }
 
@@ -81,16 +79,29 @@ header {
         grid-column: 2 / 3;
         grid-row: 3 / 5;
         width: 90%;
+    } 
+    
+    .rrss {
+        grid-column: 3 / 4;
+        grid-row: 6;
+        place-self: center;
+
+        display: flex;
+        gap: 1em;
+        z-index: 4;
+
     }
 
     .card-profile {
         grid-column: 3 / 4;
-        grid-row: 3 / 5;
-        justify-self: center;
-
-        .p-animation {
-            display: inline;
+        grid-row: 1 / span 5;
+        align-self: flex-end;
+        
+        .saludo{
+            display: block;
+            visibility: visible;
             background-color: #B4B4B4;
+            font-family: conf.fontFamily(khmer-semibold);
             text-align: center;
             width: 70%;
             padding: 0.4em;
@@ -101,6 +112,14 @@ header {
             margin-right: 100%;
             white-space: nowrap;
             overflow: hidden;
+
+            span{
+                color: var(--white);
+                font-family: conf.fontFamily(colombo-bold);
+            }
+        }
+        .p-animation {
+            
             animation: typewriter 1s steps(50) 1 normal both;
         }
 
@@ -221,17 +240,6 @@ header {
         width: 70%;
     }
 
-    img {
-        display: block;
-        position: absolute;
-        top: 16%;
-        right: 10%;
-        width: 45vw;
-        height: 85vh;
-        z-index: -1;
-    }
-
-
     form {
         width: 70%;
         grid-column: 3 / 4;
@@ -261,7 +269,16 @@ header {
         .submit {
             height: 8vh;
         }
-
+        
+        .b-contact {
+            position: absolute;
+            display: block;
+            width: calc(16em + 28vw);
+            height: calc(7em + 28vw);
+            margin-top: -10vw;
+            margin-left: -5.3vw;
+            z-index: -1;
+        }
     }
 
 

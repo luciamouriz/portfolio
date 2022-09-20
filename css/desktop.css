@@ -45,11 +45,10 @@ header .nav h1:hover {
 .swiper-pagination {
   width: 3%;
   left: 1%;
-  margin-top: 19vw;
+  padding-top: calc(1em + 34vw);
 }
 .swiper-pagination .swiper-pagination-bullet {
-  width: 1.5vw;
-  height: 3vh;
+  padding: calc(0.4em + 0.4vw);
 }
 
 .title-section {
@@ -67,14 +66,24 @@ header .nav h1:hover {
   grid-row: 3/5;
   width: 90%;
 }
+.about .rrss {
+  grid-column: 3/4;
+  grid-row: 6;
+  place-self: center;
+  display: flex;
+  gap: 1em;
+  z-index: 4;
+}
 .about .card-profile {
   grid-column: 3/4;
-  grid-row: 3/5;
-  justify-self: center;
+  grid-row: 1/span 5;
+  align-self: flex-end;
 }
-.about .card-profile .p-animation {
-  display: inline;
+.about .card-profile .saludo {
+  display: block;
+  visibility: visible;
   background-color: #B4B4B4;
+  font-family: "Noto Sans Khmer Semibold";
   text-align: center;
   width: 70%;
   padding: 0.4em;
@@ -85,6 +94,12 @@ header .nav h1:hover {
   margin-right: 100%;
   white-space: nowrap;
   overflow: hidden;
+}
+.about .card-profile .saludo span {
+  color: var(--white);
+  font-family: "Post No Bills Colombo Bold";
+}
+.about .card-profile .p-animation {
   -webkit-animation: typewriter 1s steps(50) 1 normal both;
           animation: typewriter 1s steps(50) 1 normal both;
 }
@@ -187,15 +202,6 @@ header .nav h1:hover {
   grid-row: 3/4;
   width: 70%;
 }
-.contact img {
-  display: block;
-  position: absolute;
-  top: 16%;
-  right: 10%;
-  width: 45vw;
-  height: 85vh;
-  z-index: -1;
-}
 .contact form {
   width: 70%;
   grid-column: 3/4;
@@ -217,6 +223,15 @@ header .nav h1:hover {
 }
 .contact form .submit {
   height: 8vh;
+}
+.contact form .b-contact {
+  position: absolute;
+  display: block;
+  width: calc(16em + 28vw);
+  height: calc(7em + 28vw);
+  margin-top: -10vw;
+  margin-left: -5.3vw;
+  z-index: -1;
 }
 .contact .credits {
   grid-column: 2/3;
