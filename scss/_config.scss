@@ -1,16 +1,15 @@
-
-:root{
-    --primary-color:#FF2AC3;
+:root {
+    --primary-color: #FF2AC3;
     --primary-dark-color: #ca1f9a;
-    --secondary-color:#454545;
+    --secondary-color: #454545;
     --secondary-light-color: #4D4D4D;
     --secondary-dark-color: #585858;
-    --acent-color:#29D7CC;
+    --acent-color: #29D7CC;
     --white: #fff;
 
 }
 
-$font-family:(
+$font-family: (
     colombo: "Post No Bills Colombo",
     colombo-light: "Post No Bills Colombo Light",
     colombo-bold: "Post No Bills Colombo Bold",
@@ -20,36 +19,37 @@ $font-family:(
 );
 
 $font-size: (
-    font-body: calc(0.6em + 0.7vw),
+    font-body: calc(0.7em + 0.7vw),
 
 );
 
 
 //Añadimos el mapa de fuentes
-@function fontFamily($family-value){
+@function fontFamily($family-value) {
     @return map-get($font-family, $family-value );
 }
 
-@function fontSize($size-value){
+@function fontSize($size-value) {
     @return map-get($font-size, $size-value );
 }
 
-@mixin flexbox-row{
+@mixin flexbox-row {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-@mixin flexbox-column{
+@mixin flexbox-column {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-@mixin mobile{
-    @media(max-width: 768px){ //cuando llega a 600px se quita 
+@mixin mobile {
+    @media(max-width: 768px) {
+        //cuando llega a 600px se quita 
         @content;
     }
 }

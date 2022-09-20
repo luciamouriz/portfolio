@@ -3,10 +3,20 @@
 
 //HOME
 .home {
-        
-    .arrow{ margin-top: 35em; }
-    h1{ font-size: 25vw; }
-    p{ font-size: 2vw; margin-top: 12em; }
+
+    .arrow {
+        margin-top: 35em;
+    }
+
+    h1 {
+        font-size: 25vw;
+    }
+
+    p {
+        font-size: 2vw;
+        margin-top: 12em;
+    }
+
     .b-h1 {
         width: 38vw;
         height: 90vh;
@@ -15,67 +25,70 @@
 
 //HEADER
 header {
-    .nav{
+    .nav {
         gap: 1em;
         font-size: 2vw;
 
-        h1{
+        h1 {
             width: 25%;
             height: 85px;
-            &:hover{
+
+            &:hover {
                 border-bottom: 10px solid var(--primary-color);
-                
+
             }
         }
     }
 }
-.container-header{
-    .menu{
+
+.container-header {
+    .menu {
         margin-right: 3em;
-        &.close span:nth-child(2){
+
+        &.close span:nth-child(2) {
             transform: rotate(-35deg) translate(-12px, 11px);
         }
-        
+
     }
 }
 
 //PAGINATION
-.swiper-pagination{
+.swiper-pagination {
     width: 3%;
-    left: 1%; 
-    margin-top: 19vw; 
-    
+    left: 1%;
+    margin-top: 19vw;
+
     .swiper-pagination-bullet {
         width: 1.5vw;
         height: 3vh;
     }
 }
 
-.title-section{
+.title-section {
     margin-bottom: 2em;
     width: calc(0.5em + 40vw);
 
 }
 
 //ABOUT
-.about{
-    
-    grid-template-columns: 150px repeat(2,1fr) 200px;
-    grid-template-rows: 150px repeat(6,1fr);
+.about {
+
+    grid-template-columns: 150px repeat(2, 1fr) 200px;
+    grid-template-rows: 150px repeat(6, 1fr);
     justify-items: start;
 
-    .p-about{
+    .p-about {
         grid-column: 2 / 3;
         grid-row: 3 / 5;
         width: 90%;
     }
 
-     .card-profile{
+    .card-profile {
         grid-column: 3 / 4;
-        grid-row: 3 / 5; 
+        grid-row: 3 / 5;
         justify-self: center;
 
-        .p-animation{
+        .p-animation {
             display: inline;
             background-color: #B4B4B4;
             text-align: center;
@@ -102,24 +115,24 @@ header {
 
         @keyframes typewriter {
             from {
-              width: 0;
+                width: 0;
             }
-            
+
             to {
-              width: 75%;
+                width: 75%;
             }
-          }
-        
-    } 
+        }
+
+    }
 }
 
 //SKILLS
 .skills {
-    grid-template-columns: 150px repeat(2,1fr) 150px;
-    grid-template-rows: 150px repeat(6,1fr);
+    grid-template-columns: 150px repeat(2, 1fr) 150px;
+    grid-template-rows: 150px repeat(6, 1fr);
     justify-items: start;
 
-    img{
+    img {
         grid-column: 3 / 4;
         grid-row: 2 / 6;
         width: 84%;
@@ -127,12 +140,12 @@ header {
         margin: 0;
     }
 
-    .p-skills{
+    .p-skills {
         grid-column: 2 / 3;
         width: 80%;
     }
 
-    .interests{
+    .interests {
         display: block;
         grid-column: 2 / 3;
         grid-row: 5 / 6;
@@ -145,12 +158,13 @@ header {
         background-color: #21B1A7;
         border-radius: 10px;
         padding: 3% 22% 3% 4%;
-        .p-interests{
+
+        .p-interests {
             display: flex;
             flex-direction: column;
             gap: 0.4em;
         }
-        
+
     }
 
 }
@@ -158,8 +172,8 @@ header {
 
 //PROJECTS
 .projects {
-    grid-template-columns: 150px repeat(2,1fr) 150px;
-    grid-template-rows: 150px repeat(6,1fr);
+    grid-template-columns: 150px repeat(2, 1fr) 150px;
+    grid-template-rows: 150px repeat(6, 1fr);
 
     .swiper-projects {
         grid-column: 2 / 4;
@@ -169,44 +183,45 @@ header {
 
         .swiper-slide {
             min-height: 200px;
-            
-          }
-         
+
+        }
+
         /* ARROWS */
-        .swiper-button-next, 
-        .swiper-button-prev{
+        .swiper-button-next,
+        .swiper-button-prev {
             display: inline-block;
             border-radius: 0.5em;
             background-color: var(--acent-color);
             color: var(--white);
             top: 60%;
         }
-        
-        .swiper-button-prev{
+
+        .swiper-button-prev {
             left: 6%;
             padding: 50px 40px 90px 20px;
         }
+
         .swiper-button-next {
             left: 90%;
             padding: 50px 40px 90px 20px;
         }
-        
-          
-      }
-    
+
+
+    }
+
 }
 
 //CONTACT
 .contact {
-    grid-template-columns: 150px repeat(2,1fr) 150px;
-    grid-template-rows: 150px repeat(6,1fr);
+    grid-template-columns: 150px repeat(2, 1fr) 150px;
+    grid-template-rows: 150px repeat(6, 1fr);
 
     .p-contact {
         grid-row: 3 / 4;
         width: 70%;
     }
 
-    img{
+    img {
         display: block;
         position: absolute;
         top: 16%;
@@ -230,23 +245,23 @@ header {
         }
 
 
-        input.subject{
+        input.subject {
             height: 7vh;
 
         }
 
-        input.email{
+        input.email {
             height: 7vh;
         }
 
-        input.name{
+        input.name {
             height: 7vh;
         }
 
         .submit {
             height: 8vh;
         }
-        
+
     }
 
 
@@ -255,6 +270,7 @@ header {
         grid-row: 6 / span 7;
 
         width: 70%;
+
         span {
             width: 23vw;
         }

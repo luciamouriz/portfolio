@@ -3,22 +3,26 @@
 .skills {
     display: grid;
     grid-template-columns: 45px 1fr 45px;
-    grid-template-rows: 90px repeat(6,1fr);
+    grid-template-rows: 90px repeat(6, 1fr);
     background-color: var(--secondary-color);
     justify-items: center;
 
-    img{
-        grid-column: 2;
-        grid-row: 4 / span 5;
-        width: calc(0.5em + 70vw);
+    img {
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+        justify-self: stretch;
+        align-self: center;
+        width: 100%;
     }
 
-    .p-skills{
-        grid-column: 2;
-        grid-row: 3 / 5;
+    .p-skills {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
         font-size: conf.fontSize(font-body);
     }
 
-    .interests{display: none;}
+    .interests {
+        display: none;
+    }
 
 }

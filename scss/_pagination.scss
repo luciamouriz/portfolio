@@ -1,25 +1,26 @@
 @use "config" as conf;
 
-.swiper-pagination{
 
+.swiper-pagination {
     width: 3%;
-    left: 3%;  
-    margin-top: calc(4em + 40vw);
+    left: 3%;
+    //Pagination de swiper , solo se puede modificar de esta manera 
+    padding-top: calc(12em + 80vw);
 
     .swiper-pagination-bullet {
-        
-        width: calc(0.5em + 1vw);
-        height: 2vh;
+
+        padding: calc(0.3em + 1vw);
         border-radius: 100%;
         text-align: center;
         line-height: 30px;
         opacity: 1;
         background: rgba(255, 255, 255, 0.2);
     }
-    
-    &.close{
+
+    &.close {
         display: none;
     }
+
     .swiper-pagination-bullet-active {
         background: var(--primary-color);
     }

@@ -1,44 +1,44 @@
 @use "config" as conf;
 
 .projects {
-  
-    display: grid;
-    grid-template-columns: 45px 1fr 45px;
-    grid-template-rows: 90px repeat(9,1fr);
-    justify-items: center;
-    background-color: var(--secondary-light-color);
 
-    .swiper-projects {
-        grid-column: 2 / 3;
-        grid-row: 4 / 6;
-        max-width: calc(2em + 50vw);
-        overflow: visible;
+  display: grid;
+  grid-template-columns: 45px 1fr 45px;
+  grid-template-rows: 90px repeat(9, 1fr);
+  justify-items: center;
+  background-color: var(--secondary-light-color);
 
-        .swiper-slide {
-            min-height: 200px;
-            text-align: center;
-            font-size: 18px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: var(--white);
-            transition: all .3s ease;
-            
-            &.swiper-slide-active {
-              color: var(--white);
-              background-color: var(--primary-color);
-              transform: scale(1.4);
-              z-index: 2
-            }
-          }
-         
-        .swiper-button-next, 
-        .swiper-button-prev{
-            display: none;
-        }
-          
+  .swiper-projects {
+    grid-column: 2 / 3;
+    grid-row: 4 / 6;
+    max-width: calc(2em + 50vw);
+    overflow: visible;
+
+    .swiper-slide {
+      min-height: 200px;
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: var(--white);
+      transition: all .3s ease;
+
+      &.swiper-slide-active {
+        color: var(--white);
+        background-color: var(--primary-color);
+        transform: scale(1.4);
+        z-index: 2
       }
-    
-    
-    
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: none;
+    }
+
+  }
+
+
+
 }

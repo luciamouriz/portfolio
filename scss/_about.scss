@@ -1,64 +1,70 @@
 @use "config" as conf;
 
 .about {
-    
+
     display: grid;
     grid-template-columns: 45px 1fr 45px;
-    grid-template-rows: 90px repeat(6,1fr);
+    grid-template-rows: 90px repeat(5, 1fr);
     justify-items: center;
     background-color: var(--secondary-light-color);
 
 
-    .p-about{
-        grid-row: 5 / 6;
+    .p-about {
+
         grid-column: 2 / 3;
+        grid-row: 4 / 5;
         font-size: conf.fontSize(font-body);
     }
 
-    .card-profile{
+    .rrss {
         grid-column: 2 / 3;
-        grid-row: 3 / 4;      
-        align-self: center;
+        grid-row: 5 / 6;
+        place-self: center start;
+
+        display: flex;
+        gap: 1em;
+        z-index: 4;
+
+        img.git {
+            width: calc(1.5em + 3vw);
+            height: calc(1.5em + 3vw);
+        }
+
+        img.lin {
+            width: calc(1.5em + 3vw);
+            height: calc(1.5em + 3vw);
+        }
+    }
+
+    .card-profile {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+        place-self: start center;
 
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 1em;
+        margin-bottom: 1em;
 
-        .saludo{
-           display: none;
-        }
-
-        .b-img {display: none;}
-        .p-animation{display: none; animation-iteration-count: 0;}
-        
-        .rrss{
-            grid-column: 2;
-            display: flex;
-            gap: 1em;
-            z-index: 4;
-        }
-
-        img.git{
-            width: calc(1.5em + 3vw);
-            height: calc(1.5em + 3vw);
-        }
-
-        img.lin{
-            width: calc(1.5em + 3vw);
-            height: calc(1.5em + 3vw);
-        }
-
-        img{
-            width: calc(5em + 17vw);
-            height: calc(5em + 17vw);
+        img {
+            width: calc(6em + 17vw);
+            height: calc(6em + 17vw);
             z-index: 5;
         }
 
-        
+        .saludo {
+            display: none;
+        }
+
+        .b-img {
+            display: none;
+        }
+
+        .p-animation {
+            display: none;
+            animation-iteration-count: 0;
+        }
     }
 
 }
-
-
-

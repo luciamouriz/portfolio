@@ -2,7 +2,7 @@
 
 .contact {
     display: grid;
-    grid-template-columns: 45px repeat(2,1fr);
+    grid-template-columns: 45px repeat(2, 1fr);
     grid-template-rows: 90px repeat(6, 1fr);
     background-color: var(--secondary-color);
 
@@ -12,15 +12,16 @@
         font-size: conf.fontSize(font-body);
     }
 
-    img{
+    img {
         display: none;
     }
 
     form {
-      
-        grid-column: 2;
+
+        grid-column: 2 / 3;
         grid-row: 4 / 5;
-        width: 75vw;
+
+        width: 76vw;
         display: flex;
         flex-direction: column;
         gap: 0.3em;
@@ -36,21 +37,21 @@
         textarea::placeholder {
             font-size: calc(0.9em + 0.2vw);
             font-family: conf.fontFamily(khmer);
-            color:rgb(191, 191, 191);
+            color: rgb(150, 150, 150);
         }
 
-        input.subject{
+        input.subject {
             width: 100%;
             height: 5vh;
 
         }
 
-        input.email{
+        input.email {
             width: 100%;
             height: 5vh;
         }
-        
-        input.name{
+
+        input.name {
             width: 45%;
             height: 5vh;
         }
@@ -59,20 +60,21 @@
         textarea {
             font-size: conf.fontSize(font-body);
             font-family: conf.fontFamily(khmer);
-            padding: 1em 1em 1em 1em;
-            border-radius: 0.4em;
+            padding: 1rem;
+            border-radius: 0.4rem;
             border: 1.5px solid var(--acent-color);
         }
 
         .submit {
             border: 0;
-            font-size: calc(0.6em + 0.6vw);
+            font-size: calc(0.8em + 0.6vw);
             color: var(--white);
             font-family: conf.fontFamily(khmer);
             background-color: var(--acent-color);
-            border-radius: 0.4em;
-            width: 25%;
-            height: 7vh;
+            border-radius: 0.4rem;
+            width: 30%;
+            padding: 0.7rem 0.7rem;
+
             cursor: pointer;
         }
     }

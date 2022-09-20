@@ -14,12 +14,12 @@ body {
 }
 
 body {
-    
+
     color: white;
     overflow-y: hidden;
     overflow-x: hidden;
     font-family: conf.fontFamily(khmer-light);
-    
+
 }
 
 
@@ -36,10 +36,10 @@ main {
 .contact {
     width: 100%;
     height: 100vh;
-   
+
 }
 
-.title-section{
+.title-section {
     grid-column: 2;
     grid-row: 2 / 3;
     align-self: center;
@@ -50,33 +50,33 @@ main {
     display: flex;
     flex-direction: column;
 
-    h1{
+    h1 {
         font-size: calc(1.5em + 3vw);
         letter-spacing: 0.035em;
     }
 
-   .line{
-        
+    .line {
+
         transform: translateX(-20em);
         background-color: var(--primary-color);
         height: calc(0.2em + 0.2vw);
         width: calc(2em + 8vw);
-        
-   } 
 
-   .line-animation{
+    }
+
+    .line-animation {
         animation: transicion 1s normal both;
-   }
-   
-   @keyframes transicion {
-    from {
-        transform: translateX(-20em);
     }
-    
-    to {
-        transform: translateX(0);
+
+    @keyframes transicion {
+        from {
+            transform: translateX(-20em);
+        }
+
+        to {
+            transform: translateX(0);
+        }
     }
-  }
 
 }
 
@@ -253,15 +253,3 @@ main {
 }
 
  */
-
-
-
-
-
-
-
-
-
-
-
-

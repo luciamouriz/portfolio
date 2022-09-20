@@ -1,10 +1,10 @@
 :root {
-  --primary-color:#FF2AC3;
+  --primary-color: #FF2AC3;
   --primary-dark-color: #ca1f9a;
-  --secondary-color:#454545;
+  --secondary-color: #454545;
   --secondary-light-color: #4D4D4D;
   --secondary-dark-color: #585858;
-  --acent-color:#29D7CC;
+  --acent-color: #29D7CC;
   --white: #fff;
 }
 
@@ -160,23 +160,45 @@ header .nav.show {
 .about {
   display: grid;
   grid-template-columns: 45px 1fr 45px;
-  grid-template-rows: 90px repeat(6, 1fr);
+  grid-template-rows: 90px repeat(5, 1fr);
   justify-items: center;
   background-color: var(--secondary-light-color);
 }
 .about .p-about {
-  grid-row: 5/6;
   grid-column: 2/3;
-  font-size: calc(0.6em + 0.7vw);
+  grid-row: 4/5;
+  font-size: calc(0.7em + 0.7vw);
+}
+.about .rrss {
+  grid-column: 2/3;
+  grid-row: 5/6;
+  place-self: center start;
+  display: flex;
+  gap: 1em;
+  z-index: 4;
+}
+.about .rrss img.git {
+  width: calc(1.5em + 3vw);
+  height: calc(1.5em + 3vw);
+}
+.about .rrss img.lin {
+  width: calc(1.5em + 3vw);
+  height: calc(1.5em + 3vw);
 }
 .about .card-profile {
   grid-column: 2/3;
   grid-row: 3/4;
-  align-self: center;
+  place-self: start center;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1em;
+  margin-bottom: 1em;
+}
+.about .card-profile img {
+  width: calc(6em + 17vw);
+  height: calc(6em + 17vw);
+  z-index: 5;
 }
 .about .card-profile .saludo {
   display: none;
@@ -189,25 +211,6 @@ header .nav.show {
   -webkit-animation-iteration-count: 0;
           animation-iteration-count: 0;
 }
-.about .card-profile .rrss {
-  grid-column: 2;
-  display: flex;
-  gap: 1em;
-  z-index: 4;
-}
-.about .card-profile img.git {
-  width: calc(1.5em + 3vw);
-  height: calc(1.5em + 3vw);
-}
-.about .card-profile img.lin {
-  width: calc(1.5em + 3vw);
-  height: calc(1.5em + 3vw);
-}
-.about .card-profile img {
-  width: calc(5em + 17vw);
-  height: calc(5em + 17vw);
-  z-index: 5;
-}
 
 .skills {
   display: grid;
@@ -217,14 +220,16 @@ header .nav.show {
   justify-items: center;
 }
 .skills img {
-  grid-column: 2;
-  grid-row: 4/span 5;
-  width: calc(0.5em + 70vw);
+  grid-column: 2/3;
+  grid-row: 4/5;
+  justify-self: stretch;
+  align-self: center;
+  width: 100%;
 }
 .skills .p-skills {
-  grid-column: 2;
-  grid-row: 3/5;
-  font-size: calc(0.6em + 0.7vw);
+  grid-column: 2/3;
+  grid-row: 3/4;
+  font-size: calc(0.7em + 0.7vw);
 }
 .skills .interests {
   display: none;
@@ -273,15 +278,15 @@ header .nav.show {
 .contact .p-contact {
   grid-column: 2/3;
   grid-row: 3/4;
-  font-size: calc(0.6em + 0.7vw);
+  font-size: calc(0.7em + 0.7vw);
 }
 .contact img {
   display: none;
 }
 .contact form {
-  grid-column: 2;
+  grid-column: 2/3;
   grid-row: 4/5;
-  width: 75vw;
+  width: 76vw;
   display: flex;
   flex-direction: column;
   gap: 0.3em;
@@ -295,18 +300,18 @@ header .nav.show {
 .contact form input::-moz-placeholder, .contact form textarea::-moz-placeholder {
   font-size: calc(0.9em + 0.2vw);
   font-family: "Noto Sans Khmer";
-  color: rgb(191, 191, 191);
+  color: rgb(150, 150, 150);
 }
 .contact form input:-ms-input-placeholder, .contact form textarea:-ms-input-placeholder {
   font-size: calc(0.9em + 0.2vw);
   font-family: "Noto Sans Khmer";
-  color: rgb(191, 191, 191);
+  color: rgb(150, 150, 150);
 }
 .contact form input::placeholder,
 .contact form textarea::placeholder {
   font-size: calc(0.9em + 0.2vw);
   font-family: "Noto Sans Khmer";
-  color: rgb(191, 191, 191);
+  color: rgb(150, 150, 150);
 }
 .contact form input.subject {
   width: 100%;
@@ -322,21 +327,21 @@ header .nav.show {
 }
 .contact form input,
 .contact form textarea {
-  font-size: calc(0.6em + 0.7vw);
+  font-size: calc(0.7em + 0.7vw);
   font-family: "Noto Sans Khmer";
-  padding: 1em 1em 1em 1em;
-  border-radius: 0.4em;
+  padding: 1rem;
+  border-radius: 0.4rem;
   border: 1.5px solid var(--acent-color);
 }
 .contact form .submit {
   border: 0;
-  font-size: calc(0.6em + 0.6vw);
+  font-size: calc(0.8em + 0.6vw);
   color: var(--white);
   font-family: "Noto Sans Khmer";
   background-color: var(--acent-color);
-  border-radius: 0.4em;
-  width: 25%;
-  height: 7vh;
+  border-radius: 0.4rem;
+  width: 30%;
+  padding: 0.7rem 0.7rem;
   cursor: pointer;
 }
 .contact .credits {
@@ -359,11 +364,10 @@ header .nav.show {
 .swiper-pagination {
   width: 3%;
   left: 3%;
-  margin-top: calc(4em + 40vw);
+  padding-top: calc(12em + 80vw);
 }
 .swiper-pagination .swiper-pagination-bullet {
-  width: calc(0.5em + 1vw);
-  height: 2vh;
+  padding: calc(0.3em + 1vw);
   border-radius: 100%;
   text-align: center;
   line-height: 30px;

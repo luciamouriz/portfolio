@@ -5,7 +5,7 @@ header {
     z-index: 2;
     width: 100%;
 
-    .nav{
+    .nav {
         visibility: hidden;
         position: absolute;
         width: 100vw;
@@ -21,39 +21,39 @@ header {
         gap: calc(1em + 2vw);
         cursor: pointer;
 
-        h1{
+        h1 {
             width: 67%;
-            
-            &:hover{
+
+            &:hover {
                 border-bottom: 5px solid var(--primary-color);
-                
+
             }
 
-            &:active{
+            &:active {
                 color: var(--primary-dark-color);
             }
         }
     }
 
-    .nav.show{
+    .nav.show {
         visibility: visible;
     }
 }
 
-.container-header{
+.container-header {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 
-    .logo{
+    .logo {
         width: calc(3em + 6vw);
         margin-left: 1em;
         cursor: pointer;
     }
-    
-    .menu{
-        
+
+    .menu {
+
         display: flex;
         flex-direction: column;
         gap: calc(0.3em + 0.8vw);
@@ -61,7 +61,7 @@ header {
         margin-right: 1em;
         z-index: 4;
 
-        span{
+        span {
             transition: all .2s linear;
             transform-origin: 4px 0px;
             border-radius: 0.5em;
@@ -69,21 +69,21 @@ header {
             height: calc(0.2em + 0.1vw);
             background-color: var(--primary-color);
         }
-        
+
         &.close span {
             opacity: 1;
             transform: rotate(35deg) translate(0px, 0px);
             background: var(--acent-color);
         }
-        
-        &.close span:nth-child(2){
+
+        &.close span:nth-child(2) {
             transform: rotate(-35deg) translate(-5px, 8px);
         }
-        
-        &.close span:nth-child(3){
+
+        &.close span:nth-child(3) {
             display: none;
         }
     }
 
-    
+
 }
