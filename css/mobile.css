@@ -246,7 +246,7 @@ header .nav.show {
   overflow: visible;
 }
 .projects .swiper-projects .swiper-slide {
-  min-height: 150px;
+  min-height: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -297,7 +297,7 @@ header .nav.show {
   flex-direction: row;
   gap: 1em;
   top: 70%;
-  left: 13%;
+  left: calc(0.8em + 1vw);
 }
 .projects .swiper-projects .swiper-slide .project-01 .buttons a {
   font-size: 0.8rem;
