@@ -1,8 +1,10 @@
 :root {
   --primary-color: #FF2AC3;
   --primary-dark-color: #ca1f9a;
-  --secondary-color: #454545;
-  --secondary-light-color: #4D4D4D;
+  --secondary-color: #462479;
+  --secondary-light-color: #522a8d;
+  /* --secondary-color: #454545;
+  --secondary-light-color: #4D4D4D; */
   --secondary-dark-color: #585858;
   --acent-color: #29D7CC;
   --white: #fff;
@@ -119,21 +121,21 @@ header .nav.show {
 }
 @-webkit-keyframes neon {
   0%, 100% {
-    text-shadow: 0 0 1vw;
-    color: var(--secondary-dark-color);
+    text-shadow: 0 0;
+    color: var(--acent-color);
   }
   50% {
-    text-shadow: 0 0 0.5vw;
+    text-shadow: 0 0;
     color: var(--primary-dark-color);
   }
 }
 @keyframes neon {
   0%, 100% {
-    text-shadow: 0 0 1vw;
-    color: var(--secondary-dark-color);
+    text-shadow: 0 0;
+    color: var(--acent-color);
   }
   50% {
-    text-shadow: 0 0 0.5vw;
+    text-shadow: 0 0;
     color: var(--primary-dark-color);
   }
 }
@@ -165,6 +167,13 @@ header .nav.show {
   grid-column: 2/3;
   grid-row: 4/5;
   font-size: calc(0.7em + 0.7vw);
+  word-break: break-word;
+}
+.about .p-about code {
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  font-size: 0.9em;
+  padding: 0.2em 0.4em;
 }
 .about .rrss {
   grid-column: 2/3;

@@ -50,12 +50,12 @@
 
     0%,
     100% {
-      text-shadow: 0 0 1vw;
-      color: var(--secondary-dark-color);
+      text-shadow: 0 0 ;
+      color: var(--acent-color);
     }
 
     50% {
-      text-shadow: 0 0 .5vw;
+      text-shadow: 0 0 ;
       color: var(--primary-dark-color);
     }
   }

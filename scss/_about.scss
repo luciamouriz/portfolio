@@ -14,6 +14,15 @@
         grid-column: 2 / 3;
         grid-row: 4 / 5;
         font-size: conf.fontSize(font-body);
+        word-break: break-word;
+        code{
+           // background-color: #29d7cba3;
+            background-color:var(--primary-color);
+            border-radius: 5px;
+            font-size: .9em;
+            padding: 0.2em 0.4em;
+            
+        }
     }
 
     .rrss {
