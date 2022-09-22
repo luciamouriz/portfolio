@@ -20,6 +20,7 @@ nav.querySelectorAll("h1").forEach(item => {
 
 const clickImg = document.getElementById("show-project");
 const projects = document.querySelector(".project-01");
+
 clickImg.addEventListener("click", () => {
     projects.classList.toggle("show");
 

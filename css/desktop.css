@@ -3,15 +3,15 @@
   --primary-dark-color: #ca1f9a;
   --secondary-color: #2D2F5E;
   --secondary-light-color: #37396D;
-  /* --secondary-color: #454545;
-  --secondary-light-color: #4D4D4D; */
   --secondary-dark-color: #585858;
   --acent-color: #29D7CC;
+  --acent-dark-color: #26bbb1;
   --white: #fff;
+  --dialog-color: #B4B4B4;
 }
 
 .home .arrow {
-  margin-top: 35em;
+  margin-top: 42%;
 }
 .home h1 {
   font-size: 25vw;
@@ -63,51 +63,64 @@ header .nav h1:hover {
 }
 
 .about {
-  grid-template-columns: 150px repeat(2, 1fr) 200px;
+  grid-template-columns: 150px repeat(2, 1fr) 150px;
   grid-template-rows: 150px repeat(6, 1fr);
   justify-items: start;
 }
 .about .p-about {
   grid-column: 2/3;
   grid-row: 3/5;
-  width: 90%;
 }
 .about .rrss {
-  grid-column: 3/4;
-  grid-row: 6;
-  place-self: center;
+  grid-row: 6/span 7;
   display: flex;
   gap: 1em;
   z-index: 4;
 }
 .about .card-profile {
   grid-column: 3/4;
-  grid-row: 1/span 5;
-  align-self: flex-end;
+  grid-row: 2/span 5;
+  align-self: flex-start;
 }
 .about .card-profile .saludo {
+  position: absolute;
   display: block;
-  visibility: visible;
-  background-color: #B4B4B4;
-  font-family: "Noto Sans Khmer Semibold";
   text-align: center;
-  width: 70%;
-  padding: 0.4em;
-  border-radius: 0.5em;
+  font-family: "Noto Sans Khmer";
   font-size: calc(0.7em + 1vw);
   color: var(--primary-color);
-  z-index: 5;
-  margin-right: 100%;
-  white-space: nowrap;
+  z-index: 10;
+  right: 35%;
+  margin-top: 0.6em;
   overflow: hidden;
+  border-right: 0.15em solid var(--acent-color);
+  white-space: nowrap;
 }
 .about .card-profile .saludo span {
   color: var(--white);
   font-family: "Post No Bills Colombo Bold";
 }
+.about .card-profile .dialog {
+  background-color: var(--dialog-color);
+  width: 70%;
+  height: 70px;
+  padding: 0.4em;
+  border-radius: 0.5em;
+  margin-right: 100%;
+}
+.about .card-profile .dialog::before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  margin: 60px 0 0 110px;
+  border-top: 30px solid var(--dialog-color);
+  border-right: 30px solid transparent;
+  border-left: 30px solid transparent;
+}
 .about .card-profile .p-animation {
-  -webkit-animation: typewriter 1s steps(50) 1 normal both;
-          animation: typewriter 1s steps(50) 1 normal both;
+  -webkit-animation: typewriter 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+          animation: typewriter 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 .about .card-profile .b-img {
   position: absolute;
@@ -121,7 +134,7 @@ header .nav h1:hover {
     width: 0;
   }
   to {
-    width: 75%;
+    width: 15%;
   }
 }
 @keyframes typewriter {
@@ -129,7 +142,23 @@ header .nav h1:hover {
     width: 0;
   }
   to {
-    width: 75%;
+    width: 15%;
+  }
+}
+@-webkit-keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--acent-color);
+  }
+}
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--acent-color);
   }
 }
 
@@ -180,6 +209,15 @@ header .nav h1:hover {
   max-width: 350px;
   /* ARROWS */
 }
+.projects .swiper-projects .swiper-slide:nth-child(1):hover img {
+  display: none;
+}
+.projects .swiper-projects .swiper-slide:nth-child(1):hover .project-01 {
+  visibility: visible;
+}
+.projects .swiper-projects .swiper-slide:nth-child(1):hover .project-01 .buttons {
+  left: calc(5em + 1vw);
+}
 .projects .swiper-projects .swiper-slide {
   min-height: 200px;
 }
@@ -209,14 +247,14 @@ header .nav h1:hover {
   width: 70%;
 }
 .contact form {
-  width: 70%;
+  width: 59%;
   grid-column: 3/4;
   grid-row: 3/7;
-  gap: 0.8em;
+  gap: 0.5em;
   z-index: 4;
 }
 .contact form label {
-  gap: 0.7em;
+  gap: 0.5em;
 }
 .contact form input.subject {
   height: 7vh;
@@ -229,6 +267,10 @@ header .nav h1:hover {
 }
 .contact form .submit {
   height: 8vh;
+  cursor: pointer;
+}
+.contact form .submit:hover {
+  background-color: var(--primary-color);
 }
 .contact form .b-contact {
   position: absolute;

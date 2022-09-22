@@ -3,11 +3,11 @@
   --primary-dark-color: #ca1f9a;
   --secondary-color: #2D2F5E;
   --secondary-light-color: #37396D;
-  /* --secondary-color: #454545;
-  --secondary-light-color: #4D4D4D; */
   --secondary-dark-color: #585858;
   --acent-color: #29D7CC;
+  --acent-dark-color: #26bbb1;
   --white: #fff;
+  --dialog-color: #B4B4B4;
 }
 
 header {
@@ -166,8 +166,7 @@ header .nav.show {
 .about .p-about {
   grid-column: 2/3;
   grid-row: 4/5;
-  font-size: calc(0.7em + 0.7vw);
-  word-break: break-word;
+  font-size: calc(0.7em + 0.8vw);
 }
 .about .p-about code {
   background-color: var(--primary-color);
@@ -184,12 +183,12 @@ header .nav.show {
   z-index: 4;
 }
 .about .rrss img.git {
-  width: calc(1.5em + 3vw);
-  height: calc(1.5em + 3vw);
+  width: calc(1.5em + 2vw);
+  height: calc(1.5em + 2vw);
 }
 .about .rrss img.lin {
-  width: calc(1.5em + 3vw);
-  height: calc(1.5em + 3vw);
+  width: calc(1.5em + 2vw);
+  height: calc(1.5em + 2vw);
 }
 .about .card-profile {
   grid-column: 2/3;
@@ -199,7 +198,7 @@ header .nav.show {
   flex-direction: column;
   align-items: center;
   gap: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 2.5em;
 }
 .about .card-profile img {
   width: calc(6em + 17vw);
@@ -209,13 +208,13 @@ header .nav.show {
 .about .card-profile .saludo {
   display: none;
 }
-.about .card-profile .b-img {
-  display: none;
-}
 .about .card-profile .p-animation {
   display: none;
   -webkit-animation-iteration-count: 0;
           animation-iteration-count: 0;
+}
+.about .card-profile .b-img {
+  display: none;
 }
 
 .skills {
@@ -235,7 +234,7 @@ header .nav.show {
 .skills .p-skills {
   grid-column: 2/3;
   grid-row: 3/4;
-  font-size: calc(0.7em + 0.7vw);
+  font-size: calc(0.7em + 0.8vw);
 }
 .skills .interests {
   display: none;
@@ -330,7 +329,7 @@ header .nav.show {
 .contact .p-contact {
   grid-column: 2/3;
   grid-row: 3/4;
-  font-size: calc(0.7em + 0.7vw);
+  font-size: calc(0.7em + 0.8vw);
 }
 .contact form {
   grid-column: 2/3;
@@ -376,7 +375,7 @@ header .nav.show {
 }
 .contact form input,
 .contact form textarea {
-  font-size: calc(0.7em + 0.7vw);
+  font-size: calc(0.7em + 0.8vw);
   font-family: "Noto Sans Khmer";
   padding: 1rem;
   border-radius: 0.4rem;
@@ -482,7 +481,7 @@ main {
   transform: translateX(-20em);
   background-color: var(--primary-color);
   height: calc(0.2em + 0.2vw);
-  width: calc(2em + 8vw);
+  width: calc(3em + 8vw);
 }
 .title-section .line-animation {
   -webkit-animation: transicion 1s normal both;
