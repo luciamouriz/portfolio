@@ -42,9 +42,12 @@ header {
 }
 
 .container-header {
+    .logo{
+        cursor: pointer;
+    }
     .menu {
         margin-right: 3em;
-
+        cursor: pointer;
         &.close span:nth-child(2) {
             transform: rotate(-35deg) translate(-12px, 11px);
         }

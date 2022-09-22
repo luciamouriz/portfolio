@@ -1,8 +1,8 @@
 :root {
   --primary-color: #FF2AC3;
   --primary-dark-color: #ca1f9a;
-  --secondary-color: #462479;
-  --secondary-light-color: #522a8d;
+  --secondary-color: #2D2F5E;
+  --secondary-light-color: #37396D;
   /* --secondary-color: #454545;
   --secondary-light-color: #4D4D4D; */
   --secondary-dark-color: #585858;
@@ -37,8 +37,12 @@ header .nav h1:hover {
   border-bottom: 10px solid var(--primary-color);
 }
 
+.container-header .logo {
+  cursor: pointer;
+}
 .container-header .menu {
   margin-right: 3em;
+  cursor: pointer;
 }
 .container-header .menu.close span:nth-child(2) {
   transform: rotate(-35deg) translate(-12px, 11px);

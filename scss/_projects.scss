@@ -81,9 +81,8 @@
           a{
             font-size: 0.8rem;
             text-decoration: none;
-            background-color: transparent;
-            color:var(--white);
-            border: 2px var(--acent-color) solid;
+            background-color: var(--acent-color);
+            color: var(--white);
             padding: 0.4em;
             border-radius: 0.4em;
           }

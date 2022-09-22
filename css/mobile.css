@@ -1,8 +1,8 @@
 :root {
   --primary-color: #FF2AC3;
   --primary-dark-color: #ca1f9a;
-  --secondary-color: #462479;
-  --secondary-light-color: #522a8d;
+  --secondary-color: #2D2F5E;
+  --secondary-light-color: #37396D;
   /* --secondary-color: #454545;
   --secondary-light-color: #4D4D4D; */
   --secondary-dark-color: #585858;
@@ -311,9 +311,8 @@ header .nav.show {
 .projects .swiper-projects .swiper-slide .project-01 .buttons a {
   font-size: 0.8rem;
   text-decoration: none;
-  background-color: transparent;
+  background-color: var(--acent-color);
   color: var(--white);
-  border: 2px var(--acent-color) solid;
   padding: 0.4em;
   border-radius: 0.4em;
 }
