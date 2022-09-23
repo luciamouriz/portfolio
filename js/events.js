@@ -1,6 +1,6 @@
 
 const menu = document.querySelector('.menu')
-const nav = document.querySelector(".nav")
+const nav = document.querySelector("nav")
 const pagination = document.querySelector(".swiper-pagination")
 
 menu.addEventListener('click',() => {
@@ -10,7 +10,7 @@ menu.addEventListener('click',() => {
 
 })
 
-nav.querySelectorAll("h1").forEach(item => {
+nav.querySelectorAll("li").forEach(item => {
     item.addEventListener("click", () => {
         menu.classList.remove("close")
         nav.classList.remove("show")

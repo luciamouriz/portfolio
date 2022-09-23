@@ -15,8 +15,9 @@ let swiper = new Swiper('.swiper-container', {
 }) 
 
 //Menu de navegacion
-document.querySelector(".nav").querySelectorAll("h1").forEach(item => {
+document.querySelectorAll("li").forEach(item => {
   item.addEventListener("click", () => {
+    
     let atr = item.getAttribute("data-index")
     if(atr == 1) swiper.slideTo(0)
     if(atr == 2) swiper.slideTo(1)

@@ -1,6 +1,7 @@
 :root {
   --primary-color: #FF2AC3;
   --primary-dark-color: #ca1f9a;
+  --primary-active-color: #7b135d;
   --secondary-color: #2D2F5E;
   --secondary-light-color: #37396D;
   --secondary-dark-color: #585858;
@@ -25,27 +26,25 @@
   height: 90vh;
 }
 
-header .nav {
-  gap: 1em;
-  font-size: 2vw;
-}
-header .nav h1 {
-  width: 25%;
-  height: 85px;
-}
-header .nav h1:hover {
-  border-bottom: 10px solid var(--primary-color);
-}
-
-.container-header .logo {
+header nav ul li {
   cursor: pointer;
 }
-.container-header .menu {
+header nav ul li:hover {
+  color: var(--secondary-color);
+  background-color: var(--primary-dark-color);
+}
+header nav ul li:active {
+  background-color: var(--primary-active-color);
+}
+header .container-header .logo {
+  cursor: pointer;
+}
+header .container-header .menu {
   margin-right: 3em;
   cursor: pointer;
 }
-.container-header .menu.close span:nth-child(2) {
-  transform: rotate(-35deg) translate(-12px, 11px);
+header .container-header .menu.close span:nth-child(2) {
+  transform: rotate(-45deg) translate(10px, -10px);
 }
 
 .swiper-pagination {
@@ -77,6 +76,12 @@ header .nav h1:hover {
   display: flex;
   gap: 1em;
   z-index: 4;
+}
+.about .rrss .git:hover {
+  filter: brightness(0.8);
+}
+.about .rrss .lin:hover {
+  filter: brightness(0.8);
 }
 .about .card-profile {
   grid-column: 3/4;

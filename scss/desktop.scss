@@ -25,37 +25,44 @@
 
 //HEADER
 header {
-    .nav {
-        gap: 1em;
-        font-size: 2vw;
+    nav {
 
-        h1 {
-            width: 25%;
-            height: 85px;
+        ul {
 
-            &:hover {
-                border-bottom: 10px solid var(--primary-color);
+            li {
+                cursor: pointer;
+
+                &:hover {
+                    color: var(--secondary-color);
+                    background-color: var(--primary-dark-color);
+                }
+
+                &:active {
+                    background-color: var(--primary-active-color);
+                }
 
             }
         }
     }
-}
 
-.container-header {
-    .logo {
-        cursor: pointer;
-    }
-
-    .menu {
-        margin-right: 3em;
-        cursor: pointer;
-
-        &.close span:nth-child(2) {
-            transform: rotate(-35deg) translate(-12px, 11px);
+    .container-header {
+        .logo {
+            cursor: pointer;
         }
 
+        .menu {
+            margin-right: 3em;
+            cursor: pointer;
+
+            &.close span:nth-child(2) {
+                transform: rotate(-45deg) translate(10px, -10px);
+            }
+
+        }
     }
 }
+
+
 
 //PAGINATION
 .swiper-pagination {
@@ -93,6 +100,13 @@ header {
         gap: 1em;
         z-index: 4;
 
+        .git:hover{
+            filter: brightness(0.8);
+        }
+
+        .lin:hover{
+            filter: brightness(0.8);
+        }
     }
 
     .card-profile {
@@ -253,11 +267,12 @@ header {
 
                 .buttons {
                     left: calc(1.8em + 1vw);
-                    
+
                     a {
                         font-size: 1rem;
+
                         &:hover {
-                            background-color: var( --acent-hover-color);
+                            background-color: var(--acent-hover-color);
                         }
                     }
                 }
@@ -277,6 +292,7 @@ header {
             background-color: var(--acent-color);
             color: var(--white);
             top: 60%;
+
             &:hover {
                 background-color: var(--acent-hover-color);
             }
@@ -336,6 +352,7 @@ header {
             height: 8vh;
             cursor: pointer;
             width: 25%;
+
             &:hover {
                 background-color: var(--acent-hover-color);
             }
