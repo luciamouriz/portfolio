@@ -100,11 +100,11 @@ header {
         gap: 1em;
         z-index: 4;
 
-        .git:hover{
+        .git:hover {
             filter: brightness(0.8);
         }
 
-        .lin:hover{
+        .lin:hover {
             filter: brightness(0.8);
         }
     }
@@ -329,6 +329,10 @@ header {
         grid-row: 3 / 7;
         gap: 0.5em;
         z-index: 4;
+
+        textarea {
+            height: 7em;
+        }
 
         label {
             gap: 0.5em;

@@ -272,6 +272,9 @@ header .container-header .menu.close span:nth-child(2) {
   gap: 0.5em;
   z-index: 4;
 }
+.contact form textarea {
+  height: 7em;
+}
 .contact form label {
   gap: 0.5em;
 }

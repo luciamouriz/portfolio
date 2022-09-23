@@ -22,7 +22,7 @@
         flex-direction: column;
         gap: 0.3em;
         z-index: 4;
-        
+
 
         label {
             display: flex;
@@ -61,11 +61,13 @@
             border-radius: 0.3rem;
             border: 1.5px solid var(--acent-color);
             resize: none;
-            color:var(--secondary-color);
-            &:focus{
+            color: var(--secondary-color);
+
+            &:focus {
                 outline: 2px var(--acent-color) solid;
             }
         }
+
 
         .submit {
             border: 0;
