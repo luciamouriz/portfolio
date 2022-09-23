@@ -59,6 +59,7 @@ header {
 
 //PAGINATION
 .swiper-pagination {
+    display: block;
     width: 3%;
     left: 1%;
     padding-top: calc(1em + 34vw);
@@ -235,20 +236,33 @@ header {
         grid-column: 2 / 4;
         grid-row: 3 / 5;
         margin-top: 6em;
-        max-width: 350px;
+        max-width: 300px;
 
 
         .swiper-slide:nth-child(1):hover {
             img {
                 display: none
             }
-            .project-01{
+
+            .project-01 {
                 visibility: visible;
-                .buttons{
-                    left: calc(5em + 1vw);
+
+                p {
+                    font-size: 1rem;
+                }
+
+                .buttons {
+                    left: calc(1.8em + 1vw);
+                    
+                    a {
+                        font-size: 1rem;
+                        &:hover {
+                            background-color: var( --acent-hover-color);
+                        }
+                    }
                 }
             }
-                                   
+
         }
 
         .swiper-slide {
@@ -263,6 +277,9 @@ header {
             background-color: var(--acent-color);
             color: var(--white);
             top: 60%;
+            &:hover {
+                background-color: var(--acent-hover-color);
+            }
         }
 
         .swiper-button-prev {
@@ -287,7 +304,7 @@ header {
 
     .p-contact {
         grid-row: 3 / 4;
-        width: 70%;
+        width: 75%;
     }
 
     form {
@@ -318,16 +335,16 @@ header {
         .submit {
             height: 8vh;
             cursor: pointer;
-            
-            &:hover{
-                background-color: var(--primary-color);
+            width: 25%;
+            &:hover {
+                background-color: var(--acent-hover-color);
             }
         }
 
         .b-contact {
             position: absolute;
             display: block;
-            width: calc(16em + 28vw);
+            width: calc(18em + 28vw);
             height: calc(7em + 28vw);
             margin-top: -10vw;
             margin-left: -5.3vw;

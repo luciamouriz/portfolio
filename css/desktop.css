@@ -5,7 +5,7 @@
   --secondary-light-color: #37396D;
   --secondary-dark-color: #585858;
   --acent-color: #29D7CC;
-  --acent-dark-color: #26bbb1;
+  --acent-hover-color: #ff74d8;
   --white: #fff;
   --dialog-color: #B4B4B4;
 }
@@ -49,6 +49,7 @@ header .nav h1:hover {
 }
 
 .swiper-pagination {
+  display: block;
   width: 3%;
   left: 1%;
   padding-top: calc(1em + 34vw);
@@ -206,7 +207,7 @@ header .nav h1:hover {
   grid-column: 2/4;
   grid-row: 3/5;
   margin-top: 6em;
-  max-width: 350px;
+  max-width: 300px;
   /* ARROWS */
 }
 .projects .swiper-projects .swiper-slide:nth-child(1):hover img {
@@ -215,8 +216,17 @@ header .nav h1:hover {
 .projects .swiper-projects .swiper-slide:nth-child(1):hover .project-01 {
   visibility: visible;
 }
+.projects .swiper-projects .swiper-slide:nth-child(1):hover .project-01 p {
+  font-size: 1rem;
+}
 .projects .swiper-projects .swiper-slide:nth-child(1):hover .project-01 .buttons {
-  left: calc(5em + 1vw);
+  left: calc(1.8em + 1vw);
+}
+.projects .swiper-projects .swiper-slide:nth-child(1):hover .project-01 .buttons a {
+  font-size: 1rem;
+}
+.projects .swiper-projects .swiper-slide:nth-child(1):hover .project-01 .buttons a:hover {
+  background-color: var(--acent-hover-color);
 }
 .projects .swiper-projects .swiper-slide {
   min-height: 200px;
@@ -228,6 +238,10 @@ header .nav h1:hover {
   background-color: var(--acent-color);
   color: var(--white);
   top: 60%;
+}
+.projects .swiper-projects .swiper-button-next:hover,
+.projects .swiper-projects .swiper-button-prev:hover {
+  background-color: var(--acent-hover-color);
 }
 .projects .swiper-projects .swiper-button-prev {
   left: 6%;
@@ -244,7 +258,7 @@ header .nav h1:hover {
 }
 .contact .p-contact {
   grid-row: 3/4;
-  width: 70%;
+  width: 75%;
 }
 .contact form {
   width: 59%;
@@ -268,14 +282,15 @@ header .nav h1:hover {
 .contact form .submit {
   height: 8vh;
   cursor: pointer;
+  width: 25%;
 }
 .contact form .submit:hover {
-  background-color: var(--primary-color);
+  background-color: var(--acent-hover-color);
 }
 .contact form .b-contact {
   position: absolute;
   display: block;
-  width: calc(16em + 28vw);
+  width: calc(18em + 28vw);
   height: calc(7em + 28vw);
   margin-top: -10vw;
   margin-left: -5.3vw;

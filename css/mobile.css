@@ -5,7 +5,7 @@
   --secondary-light-color: #37396D;
   --secondary-dark-color: #585858;
   --acent-color: #29D7CC;
-  --acent-dark-color: #26bbb1;
+  --acent-hover-color: #ff74d8;
   --white: #fff;
   --dialog-color: #B4B4B4;
 }
@@ -346,40 +346,46 @@ header .nav.show {
   gap: 0.3em;
 }
 .contact form input::-moz-placeholder, .contact form textarea::-moz-placeholder {
-  font-size: calc(0.9em + 0.2vw);
+  font-size: calc(0.8em + 0.2vw);
   font-family: "Noto Sans Khmer";
   color: rgb(150, 150, 150);
 }
 .contact form input:-ms-input-placeholder, .contact form textarea:-ms-input-placeholder {
-  font-size: calc(0.9em + 0.2vw);
+  font-size: calc(0.8em + 0.2vw);
   font-family: "Noto Sans Khmer";
   color: rgb(150, 150, 150);
 }
 .contact form input::placeholder,
 .contact form textarea::placeholder {
-  font-size: calc(0.9em + 0.2vw);
+  font-size: calc(0.8em + 0.2vw);
   font-family: "Noto Sans Khmer";
   color: rgb(150, 150, 150);
 }
 .contact form input.subject {
   width: 100%;
-  height: 5vh;
+  height: 4vh;
 }
 .contact form input.email {
   width: 100%;
-  height: 5vh;
+  height: 4vh;
 }
 .contact form input.name {
   width: 45%;
-  height: 5vh;
+  height: 4vh;
 }
 .contact form input,
 .contact form textarea {
   font-size: calc(0.7em + 0.8vw);
   font-family: "Noto Sans Khmer";
   padding: 1rem;
-  border-radius: 0.4rem;
+  border-radius: 0.3rem;
   border: 1.5px solid var(--acent-color);
+  resize: none;
+  color: var(--secondary-color);
+}
+.contact form input:focus,
+.contact form textarea:focus {
+  outline: 2px var(--acent-color) solid;
 }
 .contact form .submit {
   border: 0;
@@ -387,7 +393,7 @@ header .nav.show {
   color: var(--white);
   font-family: "Noto Sans Khmer";
   background-color: var(--acent-color);
-  border-radius: 0.4rem;
+  border-radius: 0.3rem;
   width: 30%;
   padding: 0.7rem 0.7rem;
 }
@@ -412,6 +418,7 @@ header .nav.show {
 }
 
 .swiper-pagination {
+  display: none;
   width: 3%;
   left: 3%;
   padding-top: calc(12em + 80vw);
