@@ -1,3 +1,4 @@
+
 const menu = document.querySelector('.menu')
 const nav = document.querySelector(".nav")
 const pagination = document.querySelector(".swiper-pagination")

@@ -5,7 +5,7 @@
   --secondary-light-color: #37396D;
   --secondary-dark-color: #585858;
   --acent-color: #29D7CC;
-  --acent-hover-color: #ff74d8;
+  --acent-hover-color: #21b0a6;
   --white: #fff;
   --dialog-color: #B4B4B4;
 }
@@ -97,7 +97,7 @@ header .nav.show {
 }
 .home h1 {
   position: absolute;
-  font-size: calc(0.2em + 48vw);
+  font-size: calc(0.3em + 55vw);
   font-family: "Post No Bills Colombo Bold";
   z-index: 3;
 }
@@ -110,14 +110,14 @@ header .nav.show {
 }
 .home p {
   position: absolute;
-  margin-top: 55vw;
-  font-size: calc(0.8em + 2vw);
+  margin-top: 58vw;
+  font-size: calc(0.9em + 2vw);
   font-family: "Post No Bills Colombo Light";
   letter-spacing: 0.2vw;
 }
 .home .b-h1 {
-  width: calc(1em + 70vw);
-  height: calc(4em + 80vw);
+  width: calc(1em + 80vw);
+  height: calc(4em + 90vw);
 }
 @-webkit-keyframes neon {
   0%, 100% {

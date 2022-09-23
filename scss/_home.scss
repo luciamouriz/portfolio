@@ -18,7 +18,7 @@
 
   h1 {
     position: absolute;
-    font-size: calc(0.2em + 48vw);
+    font-size: calc(0.3em + 55vw);
     font-family: conf.fontFamily(colombo-bold);
     z-index: 3;
   }
@@ -33,15 +33,15 @@
 
   p {
     position: absolute;
-    margin-top: 55vw;
-    font-size: calc(0.8em + 2vw);
+    margin-top: 58vw;
+    font-size: calc(0.9em + 2vw);
     font-family: conf.fontFamily(colombo-light);
     letter-spacing: 0.2vw;
   }
 
   .b-h1 {
-    width: calc(1em + 70vw);
-    height: calc(4em + 80vw);
+    width: calc(1em + 80vw);
+    height: calc(4em + 90vw);
   }
 
 
