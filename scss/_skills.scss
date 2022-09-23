@@ -18,6 +18,7 @@
     .p-skills {
         grid-column: 2 / 3;
         grid-row: 3 / 4;
+        justify-self: start;
         font-size: conf.fontSize(font-body);
     }
 

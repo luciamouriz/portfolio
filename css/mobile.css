@@ -237,6 +237,7 @@ header .container-header .menu.close span:nth-child(3) {
 .skills .p-skills {
   grid-column: 2/3;
   grid-row: 3/4;
+  justify-self: start;
   font-size: calc(0.7em + 0.8vw);
 }
 .skills .interests {
